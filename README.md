@@ -17,7 +17,10 @@ In this session, you’ll:
 
 ## 💼 Use Case: Contract Review Accelerator
 
-Imagine you’re part of a procurement team reviewing two versions of a vendor contract — Version A from last quarter, and Version B just received today.
+Imagine you’re part of a procurement team reviewing two versions of a vendor contract:
+* Version A from last quarter
+* Version B just received today
+
 Instead of manually comparing every clause, your watsonx Orchestrate IDP flow automatically:
 1.	Extracts structured data (clauses, dates, terms) using document understanding models.
 2.	Feeds the content to an AI comparison agent, which applies semantic matching and highlights critical differences (e.g., pricing, liability, renewal terms).
