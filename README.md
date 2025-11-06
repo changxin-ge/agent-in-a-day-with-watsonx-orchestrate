@@ -1,2 +1,55 @@
-# Agent-in-a-Day watsonx Orchestrate Bootcamp
+# Smarter Document Comparison with watsonx Orchestrate Intelligent Document Processing (IDP) and AI Agent
 
+![](documents/doc_compare.jpg)
+
+Ever spent hours combing through two nearly identical contracts, just to find that one sneaky clause that changed everything?  
+
+In this hands-on bootcamp, we’ll show you how to let AI do the heavy lifting. Discover how IBM’s watsonx Orchestrate Intelligent Document Processing (IDP) and AI Agent can revolutionize document comparison, turning a tedious manual task into a fast and reliable workflow.
+
+## 🧠 What You’ll Learn
+
+In this session, you’ll:
+* Understand the fundamentals of document comparison within the IDP pipeline.
+* Learn how to orchestrate workflows in watsonx Orchestrate using a custom AI Agents.
+* Extract document differences through chatting to the agent.
+* Discuss the possibility of using additional pre-built agents.
+
+
+## 💼 Use Case: Contract Review Accelerator
+
+Imagine you’re part of a procurement team reviewing two versions of a vendor contract — Version A from last quarter, and Version B just received today.
+Instead of manually comparing every clause, your watsonx Orchestrate IDP flow automatically:
+1.	Extracts structured data (clauses, dates, terms) using document understanding models.
+2.	Feeds the content to an AI comparison agent, which applies semantic matching and highlights critical differences (e.g., pricing, liability, renewal terms).
+3.	Generates a summary report for immediate review.
+
+In minutes, you’ll know what changed, why it matters, and what to do next.
+
+## 🧩 Credits
+<details><summary>IBM Clieng Engineering Team</summary>
+
+#### Business Technical Leader 
+* Vincent Lee
+
+#### Instructors
+* Zack Phillips
+* Pengxiang Xu
+* Kyle Skyllingstad
+* Chaithra M. Nagaraj
+
+#### AI Engineers
+* M N Navneeth
+* Tiyasa Mukherjee
+* Fidha Haneefa
+
+#### Designer
+* Amy Luo
+
+</details>
+
+<details><summary> IBM Brand Team </summary>
+
+#### Brand Technical Specialist
+* Bill Tice
+
+</details>
