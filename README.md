@@ -28,7 +28,7 @@ Instead of manually comparing every clause, your watsonx Orchestrate agent works
 In minutes, you’ll know what changed, why it matters, and what to do next.
 
 ## 🧩 Credits
-<details><summary>IBM Clieng Engineering Team</summary>
+<details><summary>IBM Client Engineering Team</summary>
 
 #### Business Technical Leader 
 * Vincent Lee
