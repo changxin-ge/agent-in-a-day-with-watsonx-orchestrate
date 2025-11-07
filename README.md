@@ -38,11 +38,13 @@ In minutes, you’ll know what changed, why it matters, and what to do next.
 * Pengxiang Xu
 * Kyle Skyllingstad
 * Chaithra M. Nagaraj
+* Vrisan Dubey
 
 #### AI Engineers
 * M N Navneeth
 * Tiyasa Mukherjee
 * Fidha Haneefa
+* Kousalya V
 
 #### Designer
 * Amy Luo
@@ -53,5 +55,12 @@ In minutes, you’ll know what changed, why it matters, and what to do next.
 
 #### Brand Technical Specialist
 * Bill Tice
+* Jishnu Desai
 
+#### Brand Sales Specialist
+* Pete Ingrasci
+
+#### Account Technical Leader
+* Effron Esseiva
+  
 </details>
