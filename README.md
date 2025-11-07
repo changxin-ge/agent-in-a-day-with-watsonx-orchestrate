@@ -4,26 +4,25 @@
 
 Ever spent hours combing through two nearly identical contracts, just to find that one sneaky clause that changed everything?  
 
-In this hands-on bootcamp, we’ll show you how to let AI do the heavy lifting. Discover how IBM’s watsonx Orchestrate Intelligent Document Processing (IDP) and AI Agent can revolutionize document comparison, turning a tedious manual task into a fast and reliable workflow.
+In this hands-on bootcamp, we’ll show you how to let AI do the heavy lifting. Discover how IBM’s watsonx Orchestrate AI Agent can revolutionize document comparison, turning a tedious manual task into a fast and reliable workflow.
 
 ## 🧠 What You’ll Learn
 
 In this session, you’ll:
-* Understand the fundamentals of document comparison within the IDP pipeline.
-* Learn how to orchestrate workflows in watsonx Orchestrate using a custom AI Agents.
+* Learn how to orchestrate workflows in watsonx Orchestrate using a custom AI Agent and tool.
 * Extract document differences through chatting to the agent.
 * Discuss the possibility of using additional pre-built agents.
 
 
 ## 💼 Use Case: Contract Review Accelerator
 
-Imagine you’re part of a procurement team reviewing two versions of a vendor contract:
+Imagine you’re part of a legal team reviewing two versions of a vendor contract:
 * Version A from last quarter
 * Version B just received today
 
-Instead of manually comparing every clause, your watsonx Orchestrate IDP flow automatically:
-1.	Extracts structured data (clauses, dates, terms) using document understanding models.
-2.	Feeds the content to an AI comparison agent, which applies semantic matching and highlights critical differences (e.g., pricing, liability, renewal terms).
+Instead of manually comparing every clause, your watsonx Orchestrate agent works for you:
+1.	Extracts document terms.
+2.	Feeds the content to the agent, which applies semantic matching and highlights critical differences (e.g., pricing, liability, renewal terms).
 3.	Generates a summary report for immediate review.
 
 In minutes, you’ll know what changed, why it matters, and what to do next.
