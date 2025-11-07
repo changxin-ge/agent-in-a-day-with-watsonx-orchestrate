@@ -1,4 +1,4 @@
-# Smarter Document Comparison with watsonx Orchestrate Intelligent Document Processing (IDP) and AI Agent
+# Document Comparison with watsonx Orchestrate AI Agent
 
 ![](documents/doc_compare.jpg)
 
