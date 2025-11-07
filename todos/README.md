@@ -1,14 +1,14 @@
 # TODOs 
 
 # Logistics
-- [ ] Sharing environmnet
-- [ ] Lab timeline allocation
+- [ ] Sharing environmnet [Zack]
+- [x] Lab timeline allocation [Pengxiang, Zack]
 
 # Story Scripts
-- [ ] Introduction
-- [ ] Architecture & Background
+- [ ] Introduction [Pengxiang]
+- [ ] Architecture & Background [Pengxiang, Zack]
 
-# Lab Walkthrough
+# Lab Walkthrough [CoE]
 Requirements:   
 * Take a screenshot of each step (screen change)
 * Put a red box over each mouse click or/and keyboard input field
@@ -27,6 +27,6 @@ Todos:
 8. [ ] Highlight pre-built agent for multi-agent orchestration
 
 # QA Strategy
-- [ ] Breakout room assignments
-- [ ] Test breakout rooms on Teams
-- [ ] List potential questions & sync on the answers
+- [ ] Breakout room assignments [Kyle]
+- [ ] Test breakout rooms on Teams [Kyle]
+- [ ] List potential questions & sync on the answers [Vrisan]
