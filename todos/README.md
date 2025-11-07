@@ -5,7 +5,7 @@
 - [x] Lab timeline allocation [Pengxiang, Zack]
 
 # Story Scripts
-- [ ] Introduction [Pengxiang]
+- [x] Introduction [Pengxiang]
 - [ ] Architecture & Background [Pengxiang, Zack]
 
 # Lab Walkthrough [CoE]
