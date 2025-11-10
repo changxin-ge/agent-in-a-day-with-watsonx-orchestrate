@@ -35,35 +35,35 @@ To get to the watsonx Orchestrate console, go the [Resources list on the IBM Clo
 
 Expand the `AI / Machine Learning` section and select the resource that has `watsonx Orchestrate` in the Product column, as shown above. Next, click on the `Launch watsonx Orchestrate` button.
 
-![alt text](images/image2.png)
+![alt text](documents/image2.png)
 
 This opens the watsonx Orchestrate console.
 
-![alt text](images/image3.png)
+![alt text](documents/image3.png)
 
 ### The watsonx Orchestrate console
 
 > When opening the console for the very first time, you may be greeted by a pop-up window offering that you create your first agent. Click on `Skip for now`.
 
-![alt text](images/image4.png)
+![alt text](documents/image4.png)
 
 In the console, it shows that no agents have been deployed yet. Thus, if you interact with watsonx Orchestrate at this point, not much will happen, since the system has no agents available to route any request to.
 
 However, you can already interact with the Large Language Model (LLM) that works behind the scenes, and ask general questions, like "How are you today?" or "What is the capital of France?". 
 
-![alt text](images/image5.png)
+![alt text](documents/image5.png)
 
 Go ahead and chat with watsonx Orchestrate to explore what type of answers it gives to your questions.
 
 ### AI Agent Configuration
 We are now ready to build the first agent. In the watsonx Orchestrate console, click on either `Create or Deploy` or `Create new agent` (either will get you to the same place).
 
-![alt text](images/image6.png)
+![alt text](documents/image6.png)
 
 ### The Legal Contract Comparison Agent
 In the following screen, click on `Create agent`.
 
-![alt text](images/image7.png)
+![alt text](documents/image7.png)
 
 
 
