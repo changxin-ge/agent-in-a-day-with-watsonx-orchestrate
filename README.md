@@ -50,16 +50,15 @@ This opens the watsonx Orchestrate console.
 
 In the console, it shows that no agents have been deployed yet. Thus, if you interact with watsonx Orchestrate at this point, not much will happen, since the system has no agents available to route any request to.
 
-However, you can already interact with the Large Language Model (LLM) that works behind the scenes, and ask general questions, like "How are you today?" or "What is the capital of France?". 
-
-![alt text](documents/image5.png)
-
 Go ahead and chat with watsonx Orchestrate to explore what type of answers it gives to your questions.
 
 ### Create an agent 
 We are now ready to build the first agent. In the watsonx Orchestrate console, click on either `Create or Deploy` or `Create new agent` (either will get you to the same place).
 
 ![alt text](documents/image6.png)
+
+However, if you add your document as the knowledge base in agent, it will be able to do tasks like summarization. 
+![alt text](documents/image5.png)
 
 #### The Legal Contract Comparison Agent
 In the following screen, click on `Create agent`.
@@ -107,6 +106,7 @@ Compare between legal documents
 ```
 
 <img width="800" alt="image" src="documents/image11.png">
+
 
 
 ## Credits
