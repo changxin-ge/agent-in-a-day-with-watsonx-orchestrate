@@ -6,7 +6,7 @@ Ever spent hours combing through two nearly identical contracts, just to find th
 
 In this hands-on bootcamp, we’ll show you how to let AI do the heavy lifting. Discover how IBM’s watsonx Orchestrate AI Agent can revolutionize document comparison, turning a tedious manual task into a fast and reliable workflow.
 
-## 🧠 What You’ll Learn
+## What You’ll Learn
 
 In this session, you’ll:
 * Learn how to orchestrate workflows in watsonx Orchestrate using a custom AI Agent and tool.
@@ -14,7 +14,7 @@ In this session, you’ll:
 * Discuss the possibility of using additional pre-built agents.
 
 
-## 💼 Use Case: Contract Review Accelerator
+## Use Case: Contract Review Accelerator
 
 Imagine you’re part of a legal team reviewing two versions of a vendor contract:
 * Version A from last quarter
@@ -27,7 +27,15 @@ Instead of manually comparing every clause, your watsonx Orchestrate agent works
 
 In minutes, you’ll know what changed, why it matters, and what to do next.
 
-## 🧩 Credits
+## watsonx Orchestrate
+
+To get to the watsonx Orchestrate console, go the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
+
+![alt text](documents/image1.png)
+
+
+
+## Credits
 <details><summary>IBM Client Engineering Team</summary>
 
 #### Business Technical Leader 
