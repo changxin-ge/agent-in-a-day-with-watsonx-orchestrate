@@ -65,6 +65,30 @@ In the following screen, click on `Create agent`.
 
 ![alt text](documents/image7.png)
 
+On the following page, you can select if you want to create the new agent from scratch or from a template, and give it a name and a description.
+
+ Let's start by giving it a name and a description:
+- Name: Legal Contract Comparison Agent
+- Description: 
+```
+This agent is used to compare the differences between the legal contract documents provided.
+```
+
+Note that in the world of AI Agents, these descriptions are not merely used as documentation, they are also used in making decisions about selecting the right agent for the job, so what you enter into this field is important.
+
+After you have entered the required information, click on `Create`.
+
+<img width="600" alt="image" src="documents/image8.png">
+
+On the following screen, we can enter more information about the new agent we are building. Agents can rely on `Knowledge`, on a `Toolset` that consists of one or more `Tools` and one or more `Agents` to satisfy a request that is sent to them. Moreover, you can pick the `AI Model` that it uses under the covers, as well as the `Agent style` and the `Voice modality`. We can define all of those elements here. 
+- `Knowledge` represents information that is stored in the form of "embeddings" in a so-called Vector Store. Whenever the agent answers a request, it can choose to run a search against the connected Knowledge repository (i.e. the Vector Store) to search for information that can assist in answering the request. You can either upload documents directly here, or connect the agent to an already existing repository. Note that once again, the "Description" field is key, because it will help the agent decide whether to run a search against the knowledge.
+- The `Toolset` contains other components that the agent can delegate certain tasks to. 
+  - `Tools` are functions an agent can call. It can be either an API call or an invocation of custom code. This allows to extend the agent's capabilitiy beyond what the LLM has been trained with.
+  - `Agents` are other agents, either within watsonx Orchestrate or running externally, e.g., in watsonx.ai that this agent can delegate the request, or part of a request, to.
+
+Moreover, you can specify the Large Language Model that the agent will use, as well as the "style" of the agent. For this agent, we will pick the `llama-3-405b-instruct` model and keep the `Default` style.
+
+
 
 
 ## Credits
