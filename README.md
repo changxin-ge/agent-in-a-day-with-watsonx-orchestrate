@@ -141,6 +141,111 @@ Upload the modified contract
 Extracting the content from the original contract
 ```
 
+**Step 11:** Outside of the box, again click on '+' and then 'Text extractor' 
+
+**Step 12:** Edit and modify the title of the 'Text extractor' 
+```
+Text extractor original
+```
+
+**Step 13:** Click on 'Edit data mapping' -> remove 'Auto-map' -> click on 'Variable' symbol -> add output of 'File upload 1'
+
+**Step 14:** Outside of the box, again click on '+' and select 'Tools' and use OpenAPI tool 'Fetch text content from URL' 
+
+**Step 15**: Copy and update tool title 
+```
+'Fetch text content from URL original' 
+```
+
+**Step 16:** Click on 'Edit data mapping' and remove 'Auto-map' -> click on 'Variable' symbol -> add output of 'Fetch text content from URL original'
+ 
+**Step 17:** Outside of the box, again click on '+' and then select 'User activity' -> 'Display to user' -> 'Message'
+
+**Step 18:** Double click on message and add the below 'Output message'
+
+**Step 19:** Double click on message and add the below 'Output message'
+```
+Extracting the content from the modified contract
+```
+**Step 20:** Outside of the box, again click on '+' and then 'Text extractor' 
+
+**Step 21:** Edit and modify the title of the 'Text extractor' 
+```
+Text extractor modified
+```
+**Step 22:** Click on 'Edit data mapping' -> remove 'Auto-map' -> click on 'Variable' symbol -> add output of 'File upload 2'
+
+**Step 23:** Outside of the box, again click on '+' and select 'Tools' and use OpenAPI tool 'Fetch text content from URL' 
+
+**Step 24**: Copy and update tool title 
+```
+'Fetch text content from URL modified' 
+```
+
+**Step 25:** Click on 'Edit data mapping' and remove 'Auto-map' -> click on 'Variable' symbol -> add output of 'Fetch text content from URL modified'
+ 
+**Step 26:** Outside of the box, again click on '+' and then select 'User activity' -> 'Display to user' -> 'Message'
+
+**Step 27**: Double click on message and add the below 'Output message'
+```
+Comparing the document contents
+```
+
+**Step 28:** Outside of the box, again click on '+' and then select 'Generative prompt'
+
+** Step 29:** In Define prompts, click 'Add' -> add 'original_document_content' and 'modified_document_content'
+
+** Step 30:** Copy and add in 'System prompt' and 'User prompt'
+System prompt:
+```
+You are an expert Legal Contract Document Comparison Agent.
+You will be provided with two legal contract documents:
+
+ - Original Document
+ - Modified Document
+
+Your task is to perform a line-by-line comparison to identify all changes made in the Modified Document compared to the Original Document.
+
+**Requirements for your output:**
+
+Clearly highlight differences, including additions, deletions, and modifications of any sections.
+
+Output format : The output should be well structured in the below format
+
+1. (Title of the difference)
+    - Specify the section under which there is a difference
+    - Original Text
+    - Modified Text
+    - Nature of Change (Added / Removed / Altered)
+
+and so on for all differences
+
+DO's
+- The response should directly begin with the formatted output structre specified above and nothing else.
+
+DONT's
+
+- DO NOT include unrelated commentary—focus strictly on the differences.
+- DO NOT repeat the differences, if they appear at multiple places
+```
+
+User prompt:
+```
+Here are below the original and modified version of the same document I want you to compare
+
+1. Original Document content : {self.input.original_document_content}
+
+2. Modified Document content : {self.input.modified_document_content}
+```
+
+**Step 31:** Click on 'Adjust LLM settings' , update 'New tokens' to 2000.
+Check 'Manually set the creating threshold settings' -> Set Temperature 0.1, Top K 5, Top P 0.95 -> Select model 'llama-3-405b-instruct'
+
+
+**Step 32:** Double click on 'Generative prompt' -> click on 'Edit data mapping' and remove 'Auto-map' -> click on 'Variable' symbol -> add output of 'Fetch text content from URL original' and 'Fetch text content from URL modified'
+
+**Step 33:** Finally click on 'Done' to get the flow to import as a tool.
+
 
 ## Credits
 <details><summary>IBM Client Engineering Team</summary>
