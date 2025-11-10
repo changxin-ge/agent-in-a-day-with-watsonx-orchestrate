@@ -111,7 +111,7 @@ Moreover, you can specify the Large Language Model that the agent will use, as w
 
 <img width="800" alt="image" src="documents/image22.png">
 
-Upload the OpenAPI Spec [here](../read-url-openapi.json)
+Download the [OpenAPI tool](read-url-openapi.json) and upload here
 
 
 <img width="800" alt="image" src="documents/image23.png">
