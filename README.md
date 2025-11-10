@@ -101,6 +101,22 @@ Moreover, you can specify the Large Language Model that the agent will use, as w
 
 <img width="800" alt="image" src="documents/image9.png">
 
+#### Adding OpenAPI tool
+
+<img width="800" alt="image" src="documents/image19.png">
+
+<img width="800" alt="image" src="documents/image20.png">
+
+<img width="800" alt="image" src="documents/image21.png">
+
+<img width="800" alt="image" src="documents/image22.png">
+
+Upload the OpenAPI Spec [here](../read-url-openapi.json)
+
+
+<img width="800" alt="image" src="documents/image23.png">
+
+<img width="800" alt="image" src="documents/image24.png">
 
 #### Create Agentic Workflow
 
