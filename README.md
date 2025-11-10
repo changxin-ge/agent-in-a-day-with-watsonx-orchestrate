@@ -88,7 +88,7 @@ On the following screen, we can enter more information about the new agent we ar
 
 Moreover, you can specify the Large Language Model that the agent will use, as well as the "style" of the agent. For this agent, we will pick the `llama-3-405b-instruct` model and keep the `Default` style.
 
-
+<img width="800" alt="image" src="documents/image9.png">
 
 
 ## Credits
