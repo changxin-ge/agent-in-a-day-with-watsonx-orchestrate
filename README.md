@@ -99,7 +99,7 @@ Lets go ahead and create an agentic workflow.
 
 <img width="800" alt="image" src="documents/image10.png">
 
-Step1: Provide `Name` and `Description` of the workflow. 
+**Step 1:** Provide `Name` and `Description` of the workflow. 
 - Name: ```document comparison tool```
 - Description: 
 ```
@@ -108,9 +108,26 @@ Compare between legal documents
 
 <img width="800" alt="image" src="documents/image11.png">
 
-Step2: Start adding steps by clicking on the '+' button.
+**Step 2:** Start adding steps by clicking on the '+' button.
 
 <img width="800" alt="image" src="documents/image12.png">
+
+
+**Step 3:** Click on '+' and then select 'User activity' -> 'Display to user' -> 'Message'
+
+**Step 4**: Double click on message and add the below 'Output message'
+```
+Upload the original contract      
+```
+
+**Step 5:** Click on '+' and then select 'Interactions' -> 'File Upload'
+
+**Step 6:** Update the title of 'File Upload' 
+```
+Upload the original Contract Testing
+```
+
+
 
 
 ## Credits
