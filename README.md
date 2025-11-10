@@ -99,7 +99,7 @@ Lets go ahead and create an agentic workflow.
 
 <img width="800" alt="image" src="documents/image10.png">
 
-Provide `Name` and `Description` of the workflow. 
+Step1: Provide `Name` and `Description` of the workflow. 
 - Name: ```document comparison tool```
 - Description: 
 ```
@@ -108,8 +108,9 @@ Compare between legal documents
 
 <img width="800" alt="image" src="documents/image11.png">
 
+Step2: Start adding steps by clicking on the '+' button.
 
-
+<img width="800" alt="image" src="documents/image12.png">
 
 
 ## Credits
