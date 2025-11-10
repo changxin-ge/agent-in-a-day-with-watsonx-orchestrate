@@ -59,9 +59,6 @@ We are now ready to build the first agent. In the watsonx Orchestrate console, c
 
 However, if you add your document as the knowledge base in agent, it will be able to do tasks like summarization. 
 
-![alt text](documents/image5.png)
-
-
 ![alt text](documents/image13.png)
 
 ![alt text](documents/image14.png)
@@ -71,6 +68,8 @@ However, if you add your document as the knowledge base in agent, it will be abl
 ![alt text](documents/image16.png)
 
 ![alt text](documents/image17.png)
+
+![alt text](documents/image5.png)
 
 #### The Legal Contract Comparison Agent
 In the following screen, click on `Create agent`.
