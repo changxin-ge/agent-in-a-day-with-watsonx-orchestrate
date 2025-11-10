@@ -29,6 +29,7 @@ In minutes, you’ll know what changed, why it matters, and what to do next.
 
 ## watsonx Orchestrate
 
+### Environment setup
 To get to the watsonx Orchestrate console, go the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
 
 ![alt text](documents/image1.png)
@@ -41,7 +42,7 @@ This opens the watsonx Orchestrate console.
 
 ![alt text](documents/image3.png)
 
-### The watsonx Orchestrate console
+### UI walkthrough
 
 > When opening the console for the very first time, you may be greeted by a pop-up window offering that you create your first agent. Click on `Skip for now`.
 
@@ -55,12 +56,12 @@ However, you can already interact with the Large Language Model (LLM) that works
 
 Go ahead and chat with watsonx Orchestrate to explore what type of answers it gives to your questions.
 
-### AI Agent Configuration
+### Create an agent 
 We are now ready to build the first agent. In the watsonx Orchestrate console, click on either `Create or Deploy` or `Create new agent` (either will get you to the same place).
 
 ![alt text](documents/image6.png)
 
-### The Legal Contract Comparison Agent
+#### The Legal Contract Comparison Agent
 In the following screen, click on `Create agent`.
 
 ![alt text](documents/image7.png)
@@ -89,6 +90,23 @@ On the following screen, we can enter more information about the new agent we ar
 Moreover, you can specify the Large Language Model that the agent will use, as well as the "style" of the agent. For this agent, we will pick the `llama-3-405b-instruct` model and keep the `Default` style.
 
 <img width="800" alt="image" src="documents/image9.png">
+
+#### Create Agentic Workflow
+
+We will create an agentic worlkflow and import it as tool to be used by the agent.
+
+Lets go ahead and create an agentic workflow.
+
+<img width="800" alt="image" src="documents/image10.png">
+
+Provide `Name` and `Description` of the workflow. 
+- Name: ```document comparison tool```
+- Description: 
+```
+Compare between legal documents
+```
+
+<img width="800" alt="image" src="documents/image11.png">
 
 
 ## Credits
