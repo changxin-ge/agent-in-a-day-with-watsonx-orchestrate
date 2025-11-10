@@ -193,9 +193,9 @@ Comparing the document contents
 
 **Step 28:** Outside of the box, again click on '+' and then select 'Generative prompt'
 
-** Step 29:** In Define prompts, click 'Add' -> add 'original_document_content' and 'modified_document_content'
+**Step 29:** In Define prompts, click 'Add' -> add 'original_document_content' and 'modified_document_content'
 
-** Step 30:** Copy and add in 'System prompt' and 'User prompt'
+**Step 30:** Copy and add in 'System prompt' and 'User prompt'
 System prompt:
 ```
 You are an expert Legal Contract Document Comparison Agent.
