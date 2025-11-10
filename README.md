@@ -90,6 +90,7 @@ Moreover, you can specify the Large Language Model that the agent will use, as w
 
 <img width="800" alt="image" src="documents/image9.png">
 
+
 #### Create Agentic Workflow
 
 We will create an agentic worlkflow and import it as tool to be used by the agent.
@@ -106,6 +107,8 @@ Compare between legal documents
 ```
 
 <img width="800" alt="image" src="documents/image11.png">
+
+
 
 
 
