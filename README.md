@@ -127,7 +127,19 @@ Upload the original contract
 Upload the original Contract Testing
 ```
 
+**Step 7:** Outside of the box, again click on '+' and then select 'User activity' -> 'Display to user' -> 'Message'
 
+**Step 8**: Double click on message and add the below 'Output message'
+```
+Upload the modified contract          
+```
+
+**Step 9:** Outside of the box, again click on '+' and then select 'User activity' -> 'Display to user' -> 'Message'
+
+**Step 10**: Double click on message and add the below 'Output message'
+```
+Extracting the content from the original contract
+```
 
 
 ## Credits
