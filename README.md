@@ -583,6 +583,22 @@ Here are the original and modified versions of the same document that I want you
 
   ![Close](images/prompt_close.png)
 
+78. Double click on the **Output** node.
+79. Click on the **Add** button.
+
+  ![Output Add button](images/output_add.png)
+
+80. Select **String**
+
+  ![Select String](images/data_type.png)
+
+81. In the **Name** field, enter the following and click the **Add** button
+  ```
+  output
+  ```
+  ![Output Name](images/output_variable.png)
+
+82. 
 78. You have now completed the workflow. Click **Done** to close the flow.
 
   ![Done](images/done.png)
@@ -643,7 +659,7 @@ To deploy the Legal Contract Comparison Agent
 1. Turn on the toggle button for Home page so that your agent shows up in the watsonx Orchestrate Chat home page, once deployed.
 
   ![Toggle button](images/toggle_button.png)
-  
+
 2. Click the **Deploy** button in the top-right corner to deploy your agent.
 
   ![Deploy](images/deploy_button.png)
