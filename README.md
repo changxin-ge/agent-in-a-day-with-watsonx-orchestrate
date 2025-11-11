@@ -4,7 +4,7 @@
 
 Ever spent hours combing through two nearly identical contracts, just to find that one sneaky clause that changed everything?  
 
-In this hands-on bootcamp, we’ll show you how to let AI do the heavy lifting. Discover how IBM’s watsonx Orchestrate AI Agent can revolutionize document comparison, turning a tedious manual task into a fast and reliable workflow.
+In this hands-on workshop, we’ll show you how to let AI do the heavy lifting. Discover how IBM’s watsonx Orchestrate AI Agent can revolutionize document comparison, turning a tedious manual task into a fast and reliable workflow.
 
 ## 🧠 What You’ll Learn
 
