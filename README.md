@@ -134,7 +134,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 
   ![Create agent](images/create_second_agent.png)
 
-You can choose to create the agent from scratch or from a template, and provide a name and description.
+You can choose to create the agent from scratch or from a template, once you select the type you will need to provide a name and description for your agent.
 
 Start by entering the following:
 
@@ -267,7 +267,7 @@ Let’s go ahead and create the workflow.
 Upload the original contract
 ```
 
-  ![Output M  essage](images/outputmessage.png)
+  ![Output Message](images/outputmessage.png)
 
 11. Click **+** again.
 
@@ -501,7 +501,7 @@ original_document_content
 
 68. Click **Add**.
 
-  ![Orginal Document Content](images/og_doc_content.png)
+  ![Original Document Content](images/og_doc_content.png)
 
 69. Add another input with the following name:
 
@@ -598,8 +598,7 @@ Here are the original and modified versions of the same document that I want you
   ```
   ![Output Name](images/output_variable.png)
 
-82. 
-78. You have now completed the workflow. Click **Done** to close the flow.
+82. You have now completed the workflow. Click **Done** to close the flow.
 
   ![Done](images/done.png)
 
@@ -628,7 +627,7 @@ Display the output response of the tool back to the user
 1. Test your agent by entering the following query in the chat:
 
   ```
-  I want to compare two document
+  I want to compare my legal contract documents.
   ```
 
 2. The agent will ask you to upload your original contract. Upload [This Document](<images/Master Services Agreement - ACME Corp. 462390.docx>)
@@ -683,7 +682,7 @@ To deploy the Legal Contract Comparison Agent
 <details open id="Summary">
 <summary><h2>Summary</h2></summary>
 
-In this part of the lab we automated the process of comparing two versions of a legal contract and highlighting the differences between them. We built a custom agent in watsonx Orchestrate, added an OpenAPI-based tool, and created an agentic workflow that guides the user through uploading the original and modified documents. The workflow then extracts text from both files, retrieves the content through the custom tool, and feeds the results into a generative prompt that produces a structured comparison of additions, deletions, and modifications. This provides a clear, reliable summary of every change made between contract versions.
+In this lab we automated the process of comparing two versions of a legal contract and highlighting the differences between them. We built a custom agent in watsonx Orchestrate, added an OpenAPI-based tool, and created an agentic workflow that guides the user through uploading the original and modified documents. The workflow then extracts text from both files, retrieves the content through the custom tool, and feeds the results into a generative prompt that produces a structured comparison of additions, deletions, and modifications. This provides a clear, reliable summary of every change made between contract versions.
 
 The workflow can be extended with additional steps, such as automatically notifying reviewers, generating a change-impact summary, or triggering downstream approval processes. Using an agentic workflow ensures the comparison is handled consistently every time, while still allowing the agent to involve the legal reviewer whenever intervention is needed.
 
