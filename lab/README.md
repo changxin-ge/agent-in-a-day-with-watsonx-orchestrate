@@ -1,7 +1,3 @@
-<details open id="Flow Diagram">
-<summary><h2>Flow Diagram</h2></summary>
-  ![alt text](images/flow_diagram.png)
-
 <details open id="Environment_setup">
 <summary><h2>Environment setup</h2></summary>
 
@@ -177,6 +173,11 @@ Next step is to add the required tool for this agent. To add a tool:
 
 <details>
 <summary><h3>Create Agentic Workflow</h3></summary>
+
+<details open id="Flow Diagram">
+<summary><h4>Flow Diagram</h2></summary>
+
+  ![alt text](images/flow_diagram_final.png)
 
 We will create an agentic workflow and import it as a tool to be used by the agent.
 
