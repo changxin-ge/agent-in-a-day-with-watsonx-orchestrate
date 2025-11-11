@@ -1,3 +1,7 @@
+<details open id="Flow Diagram">
+<summary><h2>Flow Diagram</h2></summary>
+  ![alt text](images/flow_diagram.png)
+
 <details open id="Environment_setup">
 <summary><h2>Environment setup</h2></summary>
 
