@@ -610,7 +610,10 @@ In this part of the lab we automated the process of comparing two versions of a 
 The workflow can be extended with additional steps, such as automatically notifying reviewers, generating a change-impact summary, or triggering downstream approval processes. Using an agentic workflow ensures the comparison is handled consistently every time, while still allowing the agent to involve the legal reviewer whenever intervention is needed.
 
 Combining agentic workflows with tools and task-level actions gives the agent the flexibility to handle both simple and multi-step processes. Users can chat with the agent to perform individual tasks, or rely on the workflow to manage complex document review operations from start to finish.
+
+
 </details>
+
 
 <details open id="Credits">
 <summary><h2>Credits</h2></summary>
