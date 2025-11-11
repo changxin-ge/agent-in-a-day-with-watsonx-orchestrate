@@ -592,10 +592,10 @@ Display the output response of the tool back to the user
   I want to compare my legal contract documents.
   ```
 
-2. The agent will ask you to upload your original contract. Upload [This Document](<images/Master Services Agreement - ACME Corp. 462390.docx>)
+2. The agent will ask you to upload your original contract. Upload [This Document](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
 
 3. Next, it will ask you to upload your modified contract:
-[Modified Document](<images/Modification Master Services Agreement - ACME Corp. 462390.docx>)
+[Modified Document](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
 
 4. You will see messages indicating:
 
