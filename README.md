@@ -1,6 +1,6 @@
 # Document Comparison with watsonx Orchestrate AI Agent
 
-![](documents/doc_compare.jpg)
+![](images/doc_compare.jpg)
 
 Ever spent hours combing through two nearly identical contracts trying to find the one clause that changes everything?
 
@@ -41,15 +41,15 @@ Within minutes, you’ll know what changed, why it matters, and what to do next.
 
 To access the watsonx Orchestrate console, go to the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
 
-![alt text](documents/image1.png)
+![alt text](images/image1.png)
 
 Expand the **AI / Machine Learning** section and select the resource that has **watsonx Orchestrate** in the Product column, as shown above. Then click **Launch watsonx Orchestrate**.
 
-![alt text](documents/image2.png)
+![alt text](images/image2.png)
 
 This opens the watsonx Orchestrate console.
 
-![alt text](documents/image3.png)
+![alt text](images/image3.png)
 
 </details>
 
@@ -58,7 +58,7 @@ This opens the watsonx Orchestrate console.
 
 > When opening the console for the first time, you may see a pop-up prompting you to create your first agent. Click **Skip for now**.
 
-![alt text](documents/image4.png)
+![alt text](images/image4.png)
 
 The console shows that no agents have been deployed yet. If you interact with watsonx Orchestrate at this point, not much will happen because the system has no agents available to process requests.
 
@@ -71,21 +71,21 @@ Go ahead and chat with watsonx Orchestrate to see how it responds.
 
 You are now ready to build your first agent. In the watsonx Orchestrate console, click either **Create or Deploy** or **Create new agent**. Both options lead to the same page.
 
-![alt text](documents/image6.png)
+![alt text](images/image6.png)
 
 If you add your document as a knowledge base for the agent, it will be able to perform tasks such as summarization.
 
-![alt text](documents/image13.png)
+![alt text](images/image13.png)
 
-![alt text](documents/image14.png)
+![alt text](images/image14.png)
 
-![alt text](documents/image15.png)
+![alt text](images/image15.png)
 
-![alt text](documents/image16.png)
+![alt text](images/image16.png)
 
-![alt text](documents/image17.png)
+![alt text](images/image17.png)
 
-![alt text](documents/image5.png)
+![alt text](images/image5.png)
 
 </details>
 
@@ -94,7 +94,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 
 On the next screen, click **Create agent**.
 
-![alt text](documents/image7.png)
+![alt text](images/image7.png)
 
 You can choose to create the agent from scratch or from a template, and provide a name and description.
 
@@ -133,29 +133,29 @@ You can configure all of these elements here.
 
 * You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and keep the **Default** style.
 
-![Agent Style and Model](documents/agent_style_model.png)
+![Agent Style and Model](images/agent_style_model.png)
 
 #### Adding an OpenAPI tool
 
 Next, add the required tool for this agent. To add a tool:
 
 1. Click **Manage agents** at the top.
-  ![Manage Agents](documents/manage_agents.png)
+  ![Manage Agents](images/manage_agents.png)
 
 2. Click **All tools** in the left panel, then click **Create tool**.
-  ![All tools](documents/all_tools.png)
+  ![All tools](images/all_tools.png)
 
 3. Select **Add from file or MCP server**.
-  ![Add from file or MCP server](documents/add_file.png)
+  ![Add from file or MCP server](images/add_file.png)
 
 4. Click **Import from file**.
-  ![Import from file](documents/image21.png)
+  ![Import from file](images/image21.png)
 
 5. Click **Drag and drop an OpenAPI file here or click to upload.**
-  ![Drag](documents/image22.png")
+  ![Drag](images/image22.png")
 
-6. Download the **OpenAPI tool file**: [read-url-openapi.json](read-url-openapi.json) and upload it.
-  ![upload](documents/image23.png")
+6. Download the **OpenAPI tool file**: [read-url-openapi.json](documents/read-url-openapi.json) and upload it.
+  ![upload](images/image23.png")
 
 7. **Select the checkbox** next to the operation name and click **Done**.
 
@@ -180,7 +180,7 @@ Let’s go ahead and create the workflow.
 
 4. Click the pencil icon next to **Edit details**.
 
-  ![alt text](documents/edit_details.png)
+  ![alt text](images/edit_details.png)
 
 5. Provide a `Name` and `Description` for the workflow, then click **Save**.
 
@@ -195,23 +195,23 @@ Let’s go ahead and create the workflow.
      Compare between legal documents
      ```
 
-  ![Workflow name](documents/workflow_name.png)
+  ![Workflow name](images/workflow_name.png)
 
 6. Click the **+** button to start adding steps.
 
-  ![Add option](documents/add.png)
+  ![Add option](images/add.png)
 
 7. Select **User activity**.
 
-  ![User activity](documents/user_activity.png)
+  ![User activity](images/user_activity.png)
 
 8. Click **Add +**.
 
-  ![Add option](documents/add_option.png)
+  ![Add option](images/add_option.png)
 
 9. From the **Display to user** tab, select **Message**.
 
-  ![Message](documents/message.png)
+  ![Message](images/message.png)
 
 10. Double-click the message and add the following text in the **Output message** field:
 
@@ -219,19 +219,19 @@ Let’s go ahead and create the workflow.
 Upload the original contract
 ```
 
-  ![Output M  essage](documents/outputmessage.png)
+  ![Output M  essage](images/outputmessage.png)
 
 11. Click **+** again.
 
-  ![Add button](documents/second_add.png)
+  ![Add button](images/second_add.png)
 
 12. From the **Collect from user** tab, select **File upload**.
 
-  ![File upload](documents/og_fileupload.png)
+  ![File upload](images/og_fileupload.png)
 
 13. Double-click **File upload**, hover over **File upload 1**, and click the pencil icon.
 
-  ![Pencil Icon](documents/file_upload_pencil_icon.png)
+  ![Pencil Icon](images/file_upload_pencil_icon.png)
 
 14. Update the title to:
 
@@ -241,11 +241,11 @@ Upload the original Contract
 
 Then click the checkmark.
 
-  ![Update name](documents/update_file_upload.png)
+  ![Update name](images/update_file_upload.png)
 
 15. Click **+**.
 
-  ![alt text](documents/second_add_option.png)
+  ![alt text](images/second_add_option.png)
 
 16. From **Display to user**, select **Message**.
 
@@ -255,11 +255,11 @@ Then click the checkmark.
 Upload the modified contract
 ```
 
-  ![Modified](documents/modiified_message.png)
+  ![Modified](images/modiified_message.png)
 
 18. Click **+**.
 
-  ![Modified File Upload](documents/modified_file_upload_add.png)
+  ![Modified File Upload](images/modified_file_upload_add.png)
 
 19. From **Collect from user**, select **File upload**.
 
@@ -271,11 +271,11 @@ Upload the modified contract
 Upload the modified contract
 ```
 
-  ![Modified File Upload](documents/modified_file_upload.png)
+  ![Modified File Upload](images/modified_file_upload.png)
 
 22. Click **+**.
 
-  ![Add button](documents/add_for_extract_msg.png)
+  ![Add button](images/add_for_extract_msg.png)
 
 23. From **Display to user**, select **Message**.
 
@@ -285,19 +285,19 @@ Upload the modified contract
 Extracting the content from the original and modified contract
 ```
 
-  ![Extraction Notification](documents/extraction_message.png)
+  ![Extraction Notification](images/extraction_message.png)
 
 25. Outside the User Activity box, click **+**.
 
-  ![Add outside user activity box](documents/add_outside_user_activity.png)
+  ![Add outside user activity box](images/add_outside_user_activity.png)
 
 26. From **Create new**, select **Text extractor**.
 
-  ![Text extractor](documents/text_extractor.png)
+  ![Text extractor](images/text_extractor.png)
 
 27. Double-click **Text extractor 1**, hover over it, and click the pencil icon.
 
-  ![Text Extractor](documents/text_extraction_pencil.png)
+  ![Text Extractor](images/text_extraction_pencil.png)
 
 28. Update the title to:
 
@@ -305,35 +305,35 @@ Extracting the content from the original and modified contract
 Text extractor original
 ```
 
-  ![Rename](documents/Rename_text_extractor.png)
+  ![Rename](images/Rename_text_extractor.png)
 
 29. Click **Edit data mapping**.
 
-  ![Data Mapping](documents/edit_data_mapping.png)
+  ![Data Mapping](images/edit_data_mapping.png)
 
 30. Click the **{x}** icon.
 
-  ![Variable](documents/variable.png)
+  ![Variable](images/variable.png)
 
 31. From the left panel, select **Upload the original contract**.
 
-  ![Original Contract](documents/og_contract.png)
+  ![Original Contract](images/og_contract.png)
 
 32. Click **value**.
 
-  ![Value](documents/value.png)
+  ![Value](images/value.png)
 
 33. Close the dialog.
 
-  ![Close](documents/close_button.png)
+  ![Close](images/close_button.png)
 
 34. Click **+**.
 
-  ![Add](documents/add_icon_.png)
+  ![Add](images/add_icon_.png)
 
 35. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL**.
 
-  ![Add tool](documents/fetch_text_from_urls.png)
+  ![Add tool](images/fetch_text_from_urls.png)
 
 36. Double-click **Fetch text content from URL**, hover over it, and click the pencil icon.
 
@@ -343,23 +343,23 @@ Text extractor original
 Fetch text content from URL original
 ```
 
-  ![Rename](documents/rename_tool.png)
+  ![Rename](images/rename_tool.png)
 
 38. Click **Edit data mapping**.
 
-  ![mapping](documents/mapping.png)
+  ![mapping](images/mapping.png)
 
 39. Click the **{x}** icon.
 
-  ![Mapping](documents/mapping2.png)
+  ![Mapping](images/mapping2.png)
 
 40. From the left, select **Text extractor original**, then select **output_file_ref**.
 
-  ![Output file ref](documents/output_file_ref.png)
+  ![Output file ref](images/output_file_ref.png)
 
 41. Click the close button.
 
-  ![Close](documents/close2.png)
+  ![Close](images/close2.png)
 
 42. Click **+** again and, from the **Create new** tab, select **Text extractor**.
 
@@ -371,7 +371,7 @@ Fetch text content from URL original
 Text extractor modified
 ```
 
-  ![Text extractor Modified](documents/Modified_text_extractor.png)
+  ![Text extractor Modified](images/Modified_text_extractor.png)
 
 45. Click **Edit data mapping**.
 
@@ -379,11 +379,11 @@ Text extractor modified
 
 47. From the left panel, select **Upload the modified contract**, then click **value**.
 
-  ![value](documents/value2.png)
+  ![value](images/value2.png)
 
 48. Click the close button.
 
-  ![close](documents/close.png)
+  ![close](images/close.png)
 
 49. Click **+**.
 
@@ -397,7 +397,7 @@ Text extractor modified
 Fetch text content from URL modified
 ```
 
-  ![rename](documents/tool_rename2.png)
+  ![rename](images/tool_rename2.png)
 
 53. Click **Edit data mapping**.
 
@@ -405,7 +405,7 @@ Fetch text content from URL modified
 
 55. From the left, select **Text extractor modified**, then select **output_file_ref**.
 
-  ![variable](documents/variable2.png)
+  ![variable](images/variable2.png)
 
 56. Click the close button.
 
@@ -423,27 +423,27 @@ Fetch text content from URL modified
 Comparing the document contents
 ```
 
-  ![Compare message](documents/compare_message.png)
+  ![Compare message](images/compare_message.png)
 
 62. Outside the User Activity box, click **+**.
 
-  ![Add Icon](documents/add_icon_for_prompt.png)
+  ![Add Icon](images/add_icon_for_prompt.png)
 
 63. From the **Create new** tab, select **Generative prompt**.
 
-  ![Generative Prompt](documents/prompt.png)
+  ![Generative Prompt](images/prompt.png)
 
 64. Click the pencil icon next to **Prompt Settings**.
 
-  ![Prompt Settings](documents/prompt_settings.png)
+  ![Prompt Settings](images/prompt_settings.png)
 
 65. Under **Define Prompts**, click **Add**.
 
-  ![Define Prompts](documents/define_prompts.png)
+  ![Define Prompts](images/define_prompts.png)
 
 66. Select **String**.
 
-  ![string](documents/strings.png)
+  ![string](images/strings.png)
 
 67. Under **Name**, enter:
 
@@ -453,7 +453,7 @@ original_document_content
 
 68. Click **Add**.
 
-  ![Orginal Document Content](documents/og_doc_content.png)
+  ![Orginal Document Content](images/og_doc_content.png)
 
 69. Add another input with the following name:
 
@@ -461,7 +461,7 @@ original_document_content
 modified_document_content
 ```
 
-! [Modified Document Content](documents/modified_doc_content.png)
+! [Modified Document Content](images/modified_doc_content.png)
 
 70. For the **system prompt**, enter the following:
 
@@ -505,39 +505,39 @@ Here are the original and modified versions of the same document that I want you
 2. Modified Document content: {self.input.modified_document_content}
 ```
 
-  ![Prompts](documents/prompts.png)
+  ![Prompts](images/prompts.png)
 
 68. Click **Adjust LLM settings** and set **New tokens** to **2000**.
 69. Enable **Manually set the creative threshold settings**.
 
-  ![Adjust LLM settings](documents/adjust_llm.png)
+  ![Adjust LLM settings](images/adjust_llm.png)
 
 70. Set **Temperature** to **0.1**, **Top K** to **5**, and **Top P** to **0.95**.
 71. Select the model **llama-3-405b-instruct**.
 
-  ![LLM Settings](documents/llm_settings2.png)
+  ![LLM Settings](images/llm_settings2.png)
 
 72. Click **Edit data mapping**.
 
-  ![Edit Mapping](documents/edit_map.png)
+  ![Edit Mapping](images/edit_map.png)
 
 73. Click the **{x}** icon next to **modified_document_content**.
 74. From the left panel, select **Fetch text content from URL modified**, then click **file_content**.
 
-  ![Selection](documents/selection.png)
+  ![Selection](images/selection.png)
 
 75. Click the **{x}** icon next to **original_document_content**.
 76. From the left panel, select **Fetch text content from URL original**, then click **file_content**.
 
-  ![Selection](documents/selection2.png)
+  ![Selection](images/selection2.png)
 
 77. Click the close button.
 
-  ![Close](documents/prompt_close.png)
+  ![Close](images/prompt_close.png)
 
 78. You have now completed the workflow. Click **Done** to close the flow.
 
-  ![Done](documents/done.png)
+  ![Done](images/done.png)
 
 ---
 
@@ -553,7 +553,7 @@ If the user asks to compare documents
 Display the output response of the tool back to the user
 ```
 
-  ![Behavior](documents/behavior.png)
+  ![Behavior](images/behavior.png)
 
 ---
 
@@ -565,18 +565,18 @@ Display the output response of the tool back to the user
   I want to compare two document
   ```
 
-2. The agent will ask you to upload your original contract. Upload [This Document](<Master Services Agreement - ACME Corp. 462390.docx>)
+2. The agent will ask you to upload your original contract. Upload [This Document](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
 
 3. Next, it will ask you to upload your modified contract:
-[Modified Document](<Modification Master Services Agreement - ACME Corp. 462390.docx>)
+[Modified Document](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
 
 4. You will see messages indicating:
 
   **Extracting the content from the original and modified contract**, followed by
   **Comparing the document contents**.
-  ![Messages](documents/messages.png)
+  ![Messages](images/messages.png)
 5. The results should look similar to the image below:
-  ![Result](documents/result.png)
+  ![Result](images/result.png)
 
 
 ### Deploy the agent
@@ -587,20 +587,20 @@ To deploy the Legal Contract Comparison Agent
 
 1. Turn on the toggle button for Home page so that your agent shows up in the watsonx Orchestrate Chat home page, once deployed.
 
-  ![Toggle button](documents/toggle_button.png)
+  ![Toggle button](images/toggle_button.png)
 2. Click the **Deploy** button in the top-right corner to deploy your agent.
 
-  ![Deploy](documents/deploy_button.png)
+  ![Deploy](images/deploy_button.png)
 3. Click the **Deploy** button in the bottom-right corner of Pre-deployment summary page.
 
-  ![Confirm Deploy](documents/confirm_deploy.png)
+  ![Confirm Deploy](images/confirm_deploy.png)
 4. To test the Agent from the AI Chat window, click on the hamburger menu in the top left corner and then click on Chat.
 
-  ![AI Chat](documents/ai_chat.png)
+  ![AI Chat](images/ai_chat.png)
 
 5. Make sure your Legal Contract Comparison Agent is selected in the dropdown. You can now test your agent.
 
-  ![Agent Selection](documents/agent_selection.png)
+  ![Agent Selection](images/agent_selection.png)
 
 </details>
 
