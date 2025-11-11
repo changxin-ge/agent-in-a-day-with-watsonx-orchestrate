@@ -39,26 +39,26 @@ Within minutes, you’ll know what changed, why it matters, and what to do next.
 <details open id="Environment_setup">
 <summary><h2>Environment setup</h2></summary>
 
-To access the watsonx Orchestrate console, go to the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
+1. To access the watsonx Orchestrate console, go to the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
 
-![alt text](images/image1.png)
+  ![alt text](images/image1.png)
 
-Expand the **AI / Machine Learning** section and select the resource that has **watsonx Orchestrate** in the Product column, as shown above. Then click **Launch watsonx Orchestrate**.
+2. Expand the **AI / Machine Learning** section and select the resource that has **watsonx Orchestrate** in the Product column, as shown above. Then click **Launch watsonx Orchestrate**.
 
-![alt text](images/image2.png)
+  ![alt text](images/image2.png)
 
 This opens the watsonx Orchestrate console.
 
-![alt text](images/image3.png)
+  ![alt text](images/image3.png)
 
 </details>
 
 <details open id="UI_walkthrough">
 <summary><h2>UI walkthrough</h2></summary>
 
-> When opening the console for the first time, you may see a pop-up prompting you to create your first agent. Click **Skip for now**.
+3. When opening the console for the first time, you may see a pop-up prompting you to create your first agent. Click **Skip for now**.
 
-![alt text](images/image4.png)
+  ![alt text](images/image4.png)
 
 The console shows that no agents have been deployed yet. If you interact with watsonx Orchestrate at this point, not much will happen because the system has no agents available to process requests.
 
@@ -69,32 +69,70 @@ Go ahead and chat with watsonx Orchestrate to see how it responds.
 <details open id="Create_an_agent">
 <summary><h2>Create an agent</h2></summary>
 
-You are now ready to build your first agent. In the watsonx Orchestrate console, click either **Create or Deploy** or **Create new agent**. Both options lead to the same page.
+You are now ready to build your first agent. In this section, you will create a Knowledge Base Agent that can answer user questions by retrieving information from uploaded documents.
 
-![alt text](images/image6.png)
+1. In the watsonx Orchestrate console, click either **Create or Deploy** or **Create new agent**. Both options lead to the same page.
+
+  ![alt text](images/image6.png)
+
+2. Enter the following in the **Name** field:
+
+   ```
+   Knowledge Base Agent
+   ```
+
+3. Enter the following in the **Description** field:
+
+   ```
+   This agent responds to the user query using the available information from the knowledge base.
+   ```
+
+4. Click **Create**.
+
+  ![Agent Creation](images/kb_agent.png)
+
+Knowledge Bases refer to vector stores that allow your agents to query unstructured data such as documents. You can use the watsonx Orchestrate internal Knowledge Base or connect your own vector store externally.
 
 If you add your document as a knowledge base for the agent, it will be able to perform tasks such as summarization.
 
-![alt text](images/image13.png)
+5. Click **Knowledge** on the left menu or scroll down to the Knowledge section, then click **Choose Knowledge**.
 
-![alt text](images/image14.png)
+  ![Add knowledge](images/add_kb.png)
 
-![alt text](images/image15.png)
+6. Select **Upload Files** and click **Next**.
 
-![alt text](images/image16.png)
+  ![Upload](images/upload.png)
 
-![alt text](images/image17.png)
+7. Click **Drag and drop files here or click to upload**. Upload any file as your knowledge, for example [This file](<documents/Master Services Agreement - ACME Corp. 462390.docx>), and click **Next**.
 
-![alt text](images/image5.png)
+  ![File upload](images/file_uploaded.png)
+
+8. Add the following description and click **Save**:
+
+   ```
+   This document is a Master Services Agreement between ACME and Mango Corporation.
+   ```
+
+  ![Description](images/description.png)
+
+9. Now start asking questions. For example:
+
+   ```
+   summarize the contract document
+   ```
+
+   ![Testing](images/testing.png)
 
 </details>
 
 <details open id="The_Legal_Contract_Comparison_Agent">
 <summary><h2>The Legal Contract Comparison Agent</h2></summary>
 
+1. Go to the [watsonx Orchestrate homepage](https://us-south.watson-orchestrate.cloud.ibm.com/chat).
+
 On the next screen, click **Create agent**.
 
-![alt text](images/image7.png)
+  ![Create agent](images/create_second_agent.png)
 
 You can choose to create the agent from scratch or from a template, and provide a name and description.
 
@@ -115,7 +153,7 @@ In AI agent design, descriptions are not only documentation. They are used by th
 
 After entering the required information, click **Create**.
 
-<img width="600" alt="image" src="documents/image8.png">
+  ![Create](images/image8.png)
 
 On the next screen, you can configure additional details about your agent.
 
@@ -154,12 +192,12 @@ Next, add the required tool for this agent. To add a tool:
 5. Click **Drag and drop an OpenAPI file here or click to upload.**
   ![Drag](images/image22.png")
 
-6. Download the **OpenAPI tool file**: [read-url-openapi.json](documents/read-url-openapi.json) and upload it.
+6. Download the **OpenAPI tool file**: [read-url-openapi.json](images/read-url-openapi.json) and upload it.
   ![upload](images/image23.png")
 
 7. **Select the checkbox** next to the operation name and click **Done**.
 
-<img width="800" alt="image" src="documents/image24.png">
+<img width="800" alt="image" src="images/image24.png">
 
 
 #### Create Agentic Workflow
@@ -170,19 +208,19 @@ Let’s go ahead and create the workflow.
 
 1. Click **Add agents** on the left, then click the **Legal Contract Comparison Agent** you created earlier.
 
-  ![Legal Contract Comparison Agent.png](<documents/Legal Contract Comparison Agent.png>)
+  ![Legal Contract Comparison Agent.png](<images/Legal Contract Comparison Agent.png>)
 
 2. Scroll down to the **Toolset** tab and click **Add Tool**.
 
 3. Select **Create an agentic workflow**.
 
-   <img width="800" alt="image" src="documents/image10.png">
+   <img width="800" alt="image" src="images/image10.png">
 
 4. Click the pencil icon next to **Edit details**.
 
   ![alt text](images/edit_details.png)
 
-5. Provide a `Name` and `Description` for the workflow, then click **Save**.
+5. Provide a **Name** and **Description** for the workflow, then click **Save**.
 
    * Name:
 
@@ -565,10 +603,10 @@ Display the output response of the tool back to the user
   I want to compare two document
   ```
 
-2. The agent will ask you to upload your original contract. Upload [This Document](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
+2. The agent will ask you to upload your original contract. Upload [This Document](<images/Master Services Agreement - ACME Corp. 462390.docx>)
 
 3. Next, it will ask you to upload your modified contract:
-[Modified Document](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
+[Modified Document](<images/Modification Master Services Agreement - ACME Corp. 462390.docx>)
 
 4. You will see messages indicating:
 
