@@ -174,14 +174,15 @@ Next step is to add the required tool for this agent. To add a tool:
 <details>
 <summary><h3>Create Agentic Workflow</h3></summary>
 
+We will create an agentic workflow and import it as a tool to be used by the agent.
+
 <details open id="Flow Diagram">
 <summary><h4>Flow Diagram</h2></summary>
 
   ![alt text](images/flow_diagram_final.png)
 
-We will create an agentic workflow and import it as a tool to be used by the agent.
 
-Let’s go ahead and create the workflow.
+Let’s go ahead and create this workflow.
 
 1. Click **Add agents** on the left, then click the **Legal Contract Comparison Agent** you created earlier.
 
