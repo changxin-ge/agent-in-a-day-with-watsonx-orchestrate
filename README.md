@@ -161,7 +161,6 @@ Next, add the required tool for this agent. To add a tool:
 
 <img width="800" alt="image" src="documents/image24.png">
 
-</details>
 
 #### Create Agentic Workflow
 
@@ -579,7 +578,6 @@ Display the output response of the tool back to the user
 5. The results should look similar to the image below:
   ![Result](documents/result.png)
 
-</details>
 
 ### Deploy the agent
 
