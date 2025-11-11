@@ -56,7 +56,7 @@ This opens the watsonx Orchestrate console.
 <details open id="UI_walkthrough">
 <summary><h2>UI walkthrough</h2></summary>
 
-3. When opening the console for the first time, you may see a pop-up prompting you to create your first agent. Click **Skip for now**.
+When opening the console for the first time, you may see a pop-up prompting you to create your first agent. Click **Skip for now**.
 
   ![alt text](images/image4.png)
 
@@ -130,7 +130,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 
 1. Go to the [watsonx Orchestrate homepage](https://us-south.watson-orchestrate.cloud.ibm.com/chat).
 
-On the next screen, click **Create agent**.
+2. Click **Create agent**.
 
   ![Create agent](images/create_second_agent.png)
 
@@ -138,12 +138,12 @@ You can choose to create the agent from scratch or from a template, and provide 
 
 Start by entering the following:
 
-* **Name:**
+3. **Name:**
 
   ```
   Legal Contract Comparison Agent
   ```
-* **Description:**
+4. **Description:**
 
   ```
   This agent is used to compare the differences between the legal contract documents provided.
@@ -151,7 +151,7 @@ Start by entering the following:
 
 In AI agent design, descriptions are not only documentation. They are used by the system to decide which agent to route a request to, so this field is important.
 
-After entering the required information, click **Create**.
+5. After entering the required information, click **Create**.
 
   ![Create](images/image8.png)
 
@@ -169,36 +169,42 @@ You can configure all of these elements here.
   * **Tools** are functions the agent can call, such as APIs or custom code, extending the agent’s capabilities beyond what the LLM knows.
   * **Agents** are other agents, either within watsonx Orchestrate or external (such as watsonx.ai agents), that can handle a request or parts of it.
 
-* You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and keep the **Default** style.
+6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and keep the **Default** style.
 
 ![Agent Style and Model](images/agent_style_model.png)
 
 <details>
 <summary><h3>Adding an OpenAPI Tool</h3></summary>
 
-Next, add the required tool for this agent. To add a tool:
+Next step is to add the required tool for this agent. To add a tool:
 
 1. Click **Manage agents** at the top.
+
   ![Manage Agents](images/manage_agents.png)
 
 2. Click **All tools** in the left panel, then click **Create tool**.
+
   ![All tools](images/all_tools.png)
 
 3. Select **Add from file or MCP server**.
+
   ![Add from file or MCP server](images/add_file.png)
 
 4. Click **Import from file**.
+
   ![Import from file](images/image21.png)
 
 5. Click **Drag and drop an OpenAPI file here or click to upload.**
-  ![Drag](images/image22.png")
 
-6. Download the **OpenAPI tool file**: [read-url-openapi.json](images/read-url-openapi.json) and upload it.
-  ![upload](images/image23.png")
+  ![Drag](images/image22.png)
+
+6. Download the **OpenAPI tool file**: [read-url-openapi.json](documents/read-url-openapi.json) and upload it.
+
+  ![upload](images/image23.png)
 
 7. **Select the checkbox** next to the operation name and click **Done**.
 
-<img width="800" alt="image" src="images/image24.png">
+  <img width="800" alt="image" src="images/image24.png">
 
 
 </details>
@@ -377,7 +383,7 @@ Text extractor original
 
   ![Add tool](images/fetch_text_from_urls.png)
 
-36. Double-click **Fetch text content from URL**, hover over it, and click the pencil icon.
+36. Double click **Fetch text content from URL**, hover over it, and click the pencil icon.
 
 37. Update the title to:
 
@@ -503,7 +509,7 @@ original_document_content
 modified_document_content
 ```
 
-! [Modified Document Content](images/modified_doc_content.png)
+  ![Modified Document Content](images/modified_doc_content.png)
 
 70. For the **system prompt**, enter the following:
 
@@ -618,8 +624,11 @@ Display the output response of the tool back to the user
 
   **Extracting the content from the original and modified contract**, followed by
   **Comparing the document contents**.
+
   ![Messages](images/messages.png)
+
 5. The results should look similar to the image below:
+
   ![Result](images/result.png)
 
 </details>
@@ -634,13 +643,16 @@ To deploy the Legal Contract Comparison Agent
 1. Turn on the toggle button for Home page so that your agent shows up in the watsonx Orchestrate Chat home page, once deployed.
 
   ![Toggle button](images/toggle_button.png)
+  
 2. Click the **Deploy** button in the top-right corner to deploy your agent.
 
   ![Deploy](images/deploy_button.png)
+
 3. Click the **Deploy** button in the bottom-right corner of Pre-deployment summary page.
 
   ![Confirm Deploy](images/confirm_deploy.png)
-4. To test the Agent from the AI Chat window, click on the hamburger menu in the top left corner and then click on Chat.
+
+4. To test the agent from the AI Chat window, click on the hamburger menu in the top left corner and then click on Chat.
 
   ![AI Chat](images/ai_chat.png)
 
