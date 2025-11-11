@@ -602,6 +602,8 @@ To deploy the Legal Contract Comparison Agent
 
   ![Agent Selection](documents/agent_selection.png)
 
+</details>
+
 <details open id="Summary">
 <summary><h2>Summary</h2></summary>
 
