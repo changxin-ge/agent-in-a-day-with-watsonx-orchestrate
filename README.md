@@ -173,7 +173,8 @@ You can configure all of these elements here.
 
 ![Agent Style and Model](images/agent_style_model.png)
 
-#### Adding an OpenAPI tool
+<details>
+<summary><h3>Adding an OpenAPI Tool</h3></summary>
 
 Next, add the required tool for this agent. To add a tool:
 
@@ -200,7 +201,10 @@ Next, add the required tool for this agent. To add a tool:
 <img width="800" alt="image" src="images/image24.png">
 
 
-#### Create Agentic Workflow
+</details>
+
+<details>
+<summary><h3>Create Agentic Workflow</h3></summary>
 
 We will create an agentic workflow and import it as a tool to be used by the agent.
 
@@ -577,9 +581,10 @@ Here are the original and modified versions of the same document that I want you
 
   ![Done](images/done.png)
 
----
+</details>
 
-### Update Agent Behavior
+<details>
+<summary><h3>Update Agent Behavior</h3></summary>
 
 Before testing the agent, complete the Behavior section. Scroll to **Behavior** or select the **Behavior** tab on the left.
 
@@ -593,9 +598,10 @@ Display the output response of the tool back to the user
 
   ![Behavior](images/behavior.png)
 
----
+</details>
 
-### Test the agent
+<details>
+<summary><h3>Test the Agent</h3></summary>
 
 1. Test your agent by entering the following query in the chat:
 
@@ -616,8 +622,10 @@ Display the output response of the tool back to the user
 5. The results should look similar to the image below:
   ![Result](images/result.png)
 
+</details>
 
-### Deploy the agent
+<details>
+<summary><h3>Deploy the Agent</h3></summary>
 
 In this section, we will deploy the Legal Contract Comparison Agent along with the tool and workflow created earlier. Deployment ensures that the agents are accessible through watsonx Orchestrate chat and ready to handle real-time queries.
 
@@ -639,6 +647,8 @@ To deploy the Legal Contract Comparison Agent
 5. Make sure your Legal Contract Comparison Agent is selected in the dropdown. You can now test your agent.
 
   ![Agent Selection](images/agent_selection.png)
+
+</details>
 
 </details>
 
@@ -693,4 +703,5 @@ Combining agentic workflows with tools and task-level actions gives the agent th
 #### Account Technical Leader
 * Effron Esseiva
   
+</details>
 </details>
