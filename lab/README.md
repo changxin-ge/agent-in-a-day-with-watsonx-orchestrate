@@ -1,5 +1,5 @@
 <details open id="Environment_setup">
-<summary><h2>Environment setup</h2></summary>
+<summary><h2>1. Environment setup</h2></summary>
 
 1. To access the watsonx Orchestrate console, go to the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
 
@@ -16,7 +16,7 @@ This opens the watsonx Orchestrate console.
 </details>
 
 <details open id="UI_walkthrough">
-<summary><h2>UI walkthrough</h2></summary>
+<summary><h2>2. UI walkthrough (Optional)</h2></summary>
 
 When opening the console for the first time, you may see a pop-up prompting you to create your first agent. Click **Skip for now**.
 
@@ -29,7 +29,7 @@ Go ahead and chat with watsonx Orchestrate to see how it responds.
 </details>
 
 <details open id="Create_an_agent">
-<summary><h2>Create an agent</h2></summary>
+<summary><h2>3. Create an agent</h2></summary>
 
 You are now ready to build your first agent. In this section, you will create a Knowledge Base Agent that can answer user questions by retrieving information from uploaded documents.
 
@@ -53,9 +53,9 @@ You are now ready to build your first agent. In this section, you will create a 
 
   ![Agent Creation](images/kb_agent.png)
 
-Knowledge Bases refer to vector stores that allow your agents to query unstructured data such as documents. You can use the watsonx Orchestrate internal Knowledge Base or connect your own vector store externally.
+**Knowledge** represents information stored as embeddings in a Vector Store. When the agent receives a request, it can search the connected knowledge repository to find relevant information. You can upload documents or link to an existing repository. Once again, the description field helps the agent decide whether a knowledge search is relevant.
 
-If you add your document as a knowledge base for the agent, it will be able to perform tasks such as summarization.
+If you add your document as a knowledge base for the agent, it will be able to perform tasks such as summarization and Q&A with the documents.
 
 5. Click **Knowledge** on the left menu or scroll down to the Knowledge section, then click **Choose Knowledge**.
 
@@ -88,7 +88,13 @@ If you add your document as a knowledge base for the agent, it will be able to p
 </details>
 
 <details open id="The_Legal_Contract_Comparison_Agent">
-<summary><h2>The Legal Contract Comparison Agent</h2></summary>
+<summary><h2>4. The Legal Contract Comparison Agent</h2></summary>
+
+This section demonstrates how to build a legal contract comparison agent that analyzes original and modified contracts to identify key differences and changes.
+
+
+<details>
+<summary><h3>4.1 Initial Setup</h3></summary>
 
 1. Go to the [watsonx Orchestrate homepage](https://us-south.watson-orchestrate.cloud.ibm.com/chat).
 
@@ -124,7 +130,6 @@ On the next screen, you can configure additional details about your agent.
 
 You can configure all of these elements here.
 
-* **Knowledge** represents information stored as embeddings in a Vector Store. When the agent receives a request, it can search the connected knowledge repository to find relevant information. You can upload documents or link to an existing repository. Once again, the description field helps the agent decide whether a knowledge search is relevant.
 
 * The **Toolset** contains components the agent can delegate tasks to.
 
@@ -134,9 +139,10 @@ You can configure all of these elements here.
 6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and keep the **Default** style.
 
 ![Agent Style and Model](images/agent_style_model.png)
+</details>
 
 <details>
-<summary><h3>Adding an OpenAPI Tool</h3></summary>
+<summary><h3>4.2 Adding an OpenAPI Tool</h3></summary>
 
 Next step is to add the required tool for this agent. To add a tool:
 
@@ -172,14 +178,11 @@ Next step is to add the required tool for this agent. To add a tool:
 </details>
 
 <details>
-<summary><h3>Create Agentic Workflow</h3></summary>
+<summary><h3>4.3 Create Agentic Workflow</h3></summary>
 
 We will create an agentic workflow and import it as a tool to be used by the agent.
 
-<details open id="Flow Diagram">
-<summary><h4>Flow Diagram</h2></summary>
-
-  ![alt text](images/flow_diagram_final.png)
+![alt text](images/flow_diagram_final.png)
 
 
 Let’s go ahead and create this workflow.
@@ -573,7 +576,7 @@ Here are the original and modified versions of the same document that I want you
 </details>
 
 <details>
-<summary><h3>Update Agent Behavior</h3></summary>
+<summary><h3>4.4 Update Agent Behavior</h3></summary>
 
 Before testing the agent, complete the Behavior section. Scroll to **Behavior** or select the **Behavior** tab on the left.
 
@@ -590,7 +593,7 @@ Display the output response of the tool back to the user
 </details>
 
 <details>
-<summary><h3>Test the Agent</h3></summary>
+<summary><h3>4.5 Test the Agent</h3></summary>
 
 1. Test your agent by entering the following query in the chat:
 
@@ -617,7 +620,7 @@ Display the output response of the tool back to the user
 </details>
 
 <details>
-<summary><h3>Deploy the Agent</h3></summary>
+<summary><h3>4.6 Deploy the Agent (Optional)</h3></summary>
 
 In this section, we will deploy the Legal Contract Comparison Agent along with the tool and workflow created earlier. Deployment ensures that the agents are accessible through watsonx Orchestrate chat and ready to handle real-time queries.
 
@@ -648,7 +651,7 @@ To deploy the Legal Contract Comparison Agent
 </details>
 
 <details open id="Summary">
-<summary><h2>Summary</h2></summary>
+<summary><h2>5. Summary</h2></summary>
 
 In this lab we automated the process of comparing two versions of a legal contract and highlighting the differences between them. We built a custom agent in watsonx Orchestrate, added an OpenAPI-based tool, and created an agentic workflow that guides the user through uploading the original and modified documents. The workflow then extracts text from both files, retrieves the content through the custom tool, and feeds the results into a generative prompt that produces a structured comparison of additions, deletions, and modifications. This provides a clear, reliable summary of every change made between contract versions.
 
