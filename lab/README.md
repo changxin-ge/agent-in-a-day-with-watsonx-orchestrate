@@ -1,3 +1,17 @@
+
+## Table of Contents
+- [1. Environment setup](#environment-setup)
+- [2. UI Wakthrough (Optional)](#UI-walkthrough)
+- [3. Create an agent](#create-an-agent)
+- [4. The Legal Contract Comparison Agent](#the-legal-contract-comparison-agent)
+  - [4.1 Initial Setup](#initial-setup)
+  - [4.2 Adding an OpenAPI Tool](#adding-an-openapi-tool)
+  - [4.3 Create Agentic Workflow](#create-agentic-workflow)
+  - [4.4 Update Agent Behavior](#update-agent-behavior)
+  - [4.5 Test the Agent](#test-the-agent)
+  - [4.6 Deploy the Agent (Optional)](#deploy-the-agent)
+- [5. Summary](#summary)
+
 <details open id="Environment_setup">
 <summary><h2>1. Environment setup</h2></summary>
 
