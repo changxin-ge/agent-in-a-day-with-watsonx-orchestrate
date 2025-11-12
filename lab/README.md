@@ -624,6 +624,7 @@ Display the output response of the tool back to the user
 <details open id="test_agent">
 <summary><h3>4.5 Test the Agent</h3></summary>
 
+
 1. Test your agent by entering the following query in the chat:
 
   ```
@@ -634,6 +635,8 @@ Display the output response of the tool back to the user
 
 3. Next, it will ask you to upload your modified contract:
 [Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
+
+**Estimated Time for Comparison Result : 1.5 - 2 minutes**
 
 4. You will see messages indicating:
 
