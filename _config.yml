@@ -1,3 +1,4 @@
 title: Agent in a Day with watsonx Orchestrate
-baseurl: "/agent-in-a-day-with-watsonx-orchestrate"  # the repo name
+theme: minima
+baseurl: "/agent-in-a-day-with-watsonx-orchestrate"
 url: "https://changxin-ge.github.io"
