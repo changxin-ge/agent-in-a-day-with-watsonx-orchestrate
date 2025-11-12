@@ -12,6 +12,14 @@
   - [4.6 Deploy the Agent (Optional)](#deploy_agent)
 - [5. Summary](#summary)
 
+## Downloadables
+
+Ensure you download these below files and keep them handy since we will be using them as part of the lab.
+
+1. [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
+2. [Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
+3. [read-url-openapi.json](<documents/read-url-openapi.json>)
+
 <details open id="Environment_setup">
 <summary><h2>1. Environment setup</h2></summary>
 
@@ -81,7 +89,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 
   ![Upload](images/upload.png)
 
-7. Click **Drag and drop files here or click to upload**. Upload any file as your knowledge, for example [This file](<documents/Master Services Agreement - ACME Corp. 462390.docx>), and click **Next**.
+7. Click **Drag and drop files here or click to upload**. Upload any file as your knowledge, for example [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>), and click **Next**.
 
   ![File upload](images/file_uploaded.png)
 
@@ -98,7 +106,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
    ```
    summarize the contract document
    ```
-
+   ![Ask Agent](images/ask_agent.png)
    ![Testing](images/testing.png)
 
 [← Back to Table of contents](#table-of-contents)
@@ -185,7 +193,7 @@ Next step is to add the required tool for this agent. To add a tool:
 
   ![Drag](images/image22.png)
 
-6. Download the **OpenAPI tool file**: [read-url-openapi.json](documents/read-url-openapi.json) and upload it.
+6. Upload the **OpenAPI tool file** downloaded in the beginning : [read-url-openapi.json](documents/read-url-openapi.json) and upload it.
 
   ![upload](images/image23.png)
 
@@ -349,7 +357,7 @@ Text extractor original
 
   ![Data Mapping](images/edit_data_mapping.png)
 
-30. Click the **{x}** icon.
+30. Hover over to the **document_ref** row and click the **{x}** icon.
 
   ![Variable](images/variable.png)
 
@@ -387,7 +395,7 @@ Fetch text content from URL original
 
   ![mapping](images/mapping.png)
 
-39. Click the **{x}** icon.
+39. Hover over to the **url** row and click the **{x}** icon.
 
   ![Mapping](images/mapping2.png)
 
@@ -413,7 +421,7 @@ Text extractor modified
 
 45. Click **Edit data mapping**.
 
-46. Click the **{x}** icon.
+46. Hover over to the **document_ref** row and click the **{x}** icon.
 
 47. From the left panel, select **Upload the modified contract**, then click **value**.
 
@@ -439,7 +447,7 @@ Fetch text content from URL modified
 
 53. Click **Edit data mapping**.
 
-54. Click the **{x}** icon.
+54. Hover over to the **url** row and click the **{x}** icon.
 
 55. From the left, select **Text extractor modified**, then select **output_file_ref**.
 
@@ -559,12 +567,12 @@ Here are the original and modified versions of the same document that I want you
 
   ![Edit Mapping](images/edit_map.png)
 
-73. Click the **{x}** icon next to **modified_document_content**.
+73. Hover over to the **modified_document_content** row and Click the **{x}** icon present in that row.
 74. From the left panel, select **Fetch text content from URL modified**, then click **file_content**.
 
   ![Selection](images/selection.png)
 
-75. Click the **{x}** icon next to **original_document_content**.
+75. Hover over to the **original_document_content** Crow and Click the **{x}** icon present in that row.
 76. From the left panel, select **Fetch text content from URL original**, then click **file_content**.
 
   ![Selection](images/selection2.png)
@@ -622,10 +630,10 @@ Display the output response of the tool back to the user
   I want to compare my legal contract documents.
   ```
 
-2. The agent will ask you to upload your original contract. Upload [This Document](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
+2. The agent will ask you to upload your original contract. Upload [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
 
 3. Next, it will ask you to upload your modified contract:
-[Modified Document](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
+[Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
 
 4. You will see messages indicating:
 
