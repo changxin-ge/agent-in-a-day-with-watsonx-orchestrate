@@ -193,7 +193,7 @@ Next step is to add the required tool for this agent. To add a tool:
 
   ![Drag](images/image22.png)
 
-6. Upload the **OpenAPI tool file** downloaded in the beginning : [read-url-openapi.json](documents/read-url-openapi.json) and upload it.
+6. Upload the **OpenAPI tool file** downloaded in the beginning : [read-url-openapi.json](documents/read-url-openapi.json).
 
   ![upload](images/image23.png)
 
@@ -630,7 +630,7 @@ Display the output response of the tool back to the user
   I want to compare my legal contract documents.
   ```
 
-2. The agent will ask you to upload your original contract. Upload [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
+2. The agent will ask you to upload your original contract: [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
 
 3. Next, it will ask you to upload your modified contract:
 [Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
