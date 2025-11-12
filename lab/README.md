@@ -25,7 +25,7 @@ Ensure you download these below files and keep them handy since we will be using
 
 1. To access the watsonx Orchestrate console, go to the [Resources list on the IBM Cloud homepage](https://cloud.ibm.com/resources).
 
-  ![alt text](/agent-in-a-day-watsonx-orchestrate-bootcamp/images/image1.png)
+  ![alt text](../images/image1.png)
 
 2. Expand the **AI / Machine Learning** section and select the resource that has **watsonx Orchestrate** in the Product column, as shown above. Then click **Launch watsonx Orchestrate**.
 
