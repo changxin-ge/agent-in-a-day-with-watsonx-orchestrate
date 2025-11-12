@@ -16,9 +16,9 @@
 
 Ensure you download these below files and keep them handy since we will be using them as part of the lab.
 
-1. [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
-2. [Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
-3. [read-url-openapi.json](<documents/read-url-openapi.json>)
+1. [Master Services Agreement - ACME Corp. 462390.docx](<../documents/Master Services Agreement - ACME Corp. 462390.docx>)
+2. [Modification Master Services Agreement - ACME Corp. 462390.docx](<../documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
+3. [read-url-openapi.json](<../documents/read-url-openapi.json>)
 
 <details open id="Environment_setup">
 <summary><h2>1. Environment setup</h2></summary>
@@ -29,7 +29,7 @@ Ensure you download these below files and keep them handy since we will be using
 
 2. Expand the **AI / Machine Learning** section and select the resource that has **watsonx Orchestrate** in the Product column, as shown above. Then click **Launch watsonx Orchestrate**.
 
-  ![alt text](images/image2.png)
+  ![alt text](../images/image2.png)
 
 This opens the watsonx Orchestrate console.
 

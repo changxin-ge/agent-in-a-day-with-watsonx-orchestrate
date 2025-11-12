@@ -1,6 +1,6 @@
 # Document Comparison with watsonx Orchestrate AI Agent
 
-![](lab/images/doc_compare.jpg)
+![](images/doc_compare.jpg)
 
 Ever spent hours combing through two nearly identical contracts, just to find that one sneaky clause that changed everything?  
 
