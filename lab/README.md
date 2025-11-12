@@ -596,7 +596,23 @@ Here are the original and modified versions of the same document that I want you
   ```
   ![Output Name](images/output_variable.png)
 
-82. You have now completed the workflow. Click **Done** to close the flow.
+83. Click **Edit data mapping**.
+
+  ![Edit Mapping](images/edit_mapping_output.png)
+
+84. Hover over to the **output** row and Click the **{x}** icon present in that row.
+
+  ![Output Mapping](images/output_mapping.png)
+
+85. From the left panel, select **Generative prompt**, then click **value**.
+
+  ![Generated Prompt Variable](images/Generated_prompt.png)
+
+86. Click the close button.
+
+  ![Output close button](images/output_close_button.png)
+
+87. You have now completed the workflow. Click **Done** to close the flow.
 
   ![Done](images/done.png)
 
