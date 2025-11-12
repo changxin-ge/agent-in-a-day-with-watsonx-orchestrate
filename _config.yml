@@ -1,4 +1,6 @@
 title: Agent in a Day with watsonx Orchestrate
-theme: minima
-baseurl: "/agent-in-a-day-with-watsonx-orchestrate"
-url: "https://changxin-ge.github.io"
+baseurl: /agent-in-a-day-with-watsonx-orchestrate
+url: https://changxin-ge.github.io
+remote_theme: jekyll/minima
+minima:
+  skin: dark
