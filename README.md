@@ -31,6 +31,10 @@ In minutes, you’ll know what changed, why it matters, and what to do next.
 
 Please find the step-by-step instructions [here](lab/README.md) on how you can implement this use case.
 
+## Resources
+* [watsonx Orechestrate Documentation](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base)
+* [watsonx Orechestrate ADK](https://developer.watson-orchestrate.ibm.com/)
+
 
 ## 🧩 Credits
 <details><summary>IBM Client Engineering Team</summary>

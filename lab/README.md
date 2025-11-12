@@ -1,4 +1,6 @@
 
+# Workshop Lab
+
 ## Table of Contents
 - [1. Environment setup](#Environment_setup)
 - [2. UI Wakthrough (Optional)](#UI_walkthrough)
