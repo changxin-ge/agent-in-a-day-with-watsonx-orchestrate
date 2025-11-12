@@ -5,7 +5,7 @@
 - [3. Create an agent](#Create_an_agent)
 - [4. The Legal Contract Comparison Agent](#The_Legal_Contract_Comparison_Agent)
   - [4.1 Initial Setup](#initial_setup)
-  - [4.2 Adding an OpenAPI Tool](#adding_openapi_tooll)
+  - [4.2 Adding an OpenAPI Tool](#adding_openapi_tool)
   - [4.3 Create Agentic Workflow](#create_agentic_workflow)
   - [4.4 Update Agent Behavior](#update_agent_behavior)
   - [4.5 Test the Agent](#test_agent)
@@ -27,6 +27,7 @@ This opens the watsonx Orchestrate console.
 
   ![alt text](images/image3.png)
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="UI_walkthrough">
@@ -40,6 +41,7 @@ The console shows that no agents have been deployed yet. If you interact with wa
 
 Go ahead and chat with watsonx Orchestrate to see how it responds.
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="Create_an_agent">
@@ -99,6 +101,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 
    ![Testing](images/testing.png)
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="The_Legal_Contract_Comparison_Agent">
@@ -153,6 +156,8 @@ You can configure all of these elements here.
 6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and keep the **Default** style.
 
 ![Agent Style and Model](images/agent_style_model.png)
+
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="adding_openapi_tool">
@@ -188,7 +193,7 @@ Next step is to add the required tool for this agent. To add a tool:
 
   <img width="800" alt="image" src="images/image24.png">
 
-
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="create_agentic_workflow">
@@ -587,6 +592,7 @@ Here are the original and modified versions of the same document that I want you
 
   ![Done](images/done.png)
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="update_agent_behavior">
@@ -604,6 +610,7 @@ Display the output response of the tool back to the user
 
   ![Behavior](images/behavior.png)
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="test_agent">
@@ -631,6 +638,7 @@ Display the output response of the tool back to the user
 
   ![Result](images/result.png)
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 <details open id="deploy_agent">
@@ -660,6 +668,7 @@ To deploy the Legal Contract Comparison Agent
 
   ![Agent Selection](images/agent_selection.png)
 
+[← Back to Table of contents](#table-of-contents)
 </details>
 
 </details>
@@ -673,5 +682,5 @@ The workflow can be extended with additional steps, such as automatically notify
 
 Combining agentic workflows with tools and task-level actions gives the agent the flexibility to handle both simple and multi-step processes. Users can chat with the agent to perform individual tasks, or rely on the workflow to manage complex document review operations from start to finish.
 
-
+[← Back to Table of contents](#table-of-contents)
 </details>
