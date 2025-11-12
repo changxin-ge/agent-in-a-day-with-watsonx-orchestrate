@@ -1,15 +1,15 @@
 
 ## Table of Contents
-- [1. Environment setup](#environment-setup)
-- [2. UI Wakthrough (Optional)](#UI-walkthrough)
-- [3. Create an agent](#create-an-agent)
-- [4. The Legal Contract Comparison Agent](#the-legal-contract-comparison-agent)
-  - [4.1 Initial Setup](#initial-setup)
-  - [4.2 Adding an OpenAPI Tool](#adding-an-openapi-tool)
-  - [4.3 Create Agentic Workflow](#create-agentic-workflow)
-  - [4.4 Update Agent Behavior](#update-agent-behavior)
-  - [4.5 Test the Agent](#test-the-agent)
-  - [4.6 Deploy the Agent (Optional)](#deploy-the-agent)
+- [1. Environment setup](#Environment_setup)
+- [2. UI Wakthrough (Optional)](#UI_walkthrough)
+- [3. Create an agent](#Create_an_agent)
+- [4. The Legal Contract Comparison Agent](#The_Legal_Contract_Comparison_Agent)
+  - [4.1 Initial Setup](#initial_setup)
+  - [4.2 Adding an OpenAPI Tool](#adding_openapi_tooll)
+  - [4.3 Create Agentic Workflow](#create_agentic_workflow)
+  - [4.4 Update Agent Behavior](#update_agent_behavior)
+  - [4.5 Test the Agent](#test_agent)
+  - [4.6 Deploy the Agent (Optional)](#deploy_agent)
 - [5. Summary](#summary)
 
 <details open id="Environment_setup">
@@ -107,7 +107,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 This section demonstrates how to build a legal contract comparison agent that analyzes original and modified contracts to identify key differences and changes.
 
 
-<details>
+<details open id="initial_setup">
 <summary><h3>4.1 Initial Setup</h3></summary>
 
 1. Go to the [watsonx Orchestrate homepage](https://us-south.watson-orchestrate.cloud.ibm.com/chat).
@@ -155,7 +155,7 @@ You can configure all of these elements here.
 ![Agent Style and Model](images/agent_style_model.png)
 </details>
 
-<details>
+<details open id="adding_openapi_tool">
 <summary><h3>4.2 Adding an OpenAPI Tool</h3></summary>
 
 Next step is to add the required tool for this agent. To add a tool:
@@ -191,7 +191,7 @@ Next step is to add the required tool for this agent. To add a tool:
 
 </details>
 
-<details>
+<details open id="create_agentic_workflow">
 <summary><h3>4.3 Create Agentic Workflow</h3></summary>
 
 We will create an agentic workflow and import it as a tool to be used by the agent.
@@ -589,7 +589,7 @@ Here are the original and modified versions of the same document that I want you
 
 </details>
 
-<details>
+<details open id="update_agent_behavior">
 <summary><h3>4.4 Update Agent Behavior</h3></summary>
 
 Before testing the agent, complete the Behavior section. Scroll to **Behavior** or select the **Behavior** tab on the left.
@@ -606,7 +606,7 @@ Display the output response of the tool back to the user
 
 </details>
 
-<details>
+<details open id="test_agent">
 <summary><h3>4.5 Test the Agent</h3></summary>
 
 1. Test your agent by entering the following query in the chat:
@@ -633,7 +633,7 @@ Display the output response of the tool back to the user
 
 </details>
 
-<details>
+<details open id="deploy_agent">
 <summary><h3>4.6 Deploy the Agent (Optional)</h3></summary>
 
 In this section, we will deploy the Legal Contract Comparison Agent along with the tool and workflow created earlier. Deployment ensures that the agents are accessible through watsonx Orchestrate chat and ready to handle real-time queries.
@@ -664,7 +664,7 @@ To deploy the Legal Contract Comparison Agent
 
 </details>
 
-<details open id="Summary">
+<details open id="summary">
 <summary><h2>5. Summary</h2></summary>
 
 In this lab we automated the process of comparing two versions of a legal contract and highlighting the differences between them. We built a custom agent in watsonx Orchestrate, added an OpenAPI-based tool, and created an agentic workflow that guides the user through uploading the original and modified documents. The workflow then extracts text from both files, retrieves the content through the custom tool, and feeds the results into a generative prompt that produces a structured comparison of additions, deletions, and modifications. This provides a clear, reliable summary of every change made between contract versions.
