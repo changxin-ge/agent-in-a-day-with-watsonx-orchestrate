@@ -693,5 +693,5 @@ The workflow can be extended with additional steps, such as automatically notify
 
 Combining agentic workflows with tools and task-level actions gives the agent the flexibility to handle both simple and multi-step processes. Users can chat with the agent to perform individual tasks, or rely on the workflow to manage complex document review operations from start to finish.
 
-[← Back to Table of contents](#table-of-contents)
+[← Back to Table of contents](#table-of-contents) | [← Back to Main page](../README.md)
 </details>
