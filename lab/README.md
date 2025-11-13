@@ -163,7 +163,7 @@ You can configure all of these elements here.
   * **Tools** are functions the agent can call, such as APIs or custom code, extending the agent’s capabilities beyond what the LLM knows.
   * **Agents** are other agents, either within watsonx Orchestrate or external (such as watsonx.ai agents), that can handle a request or parts of it.
 
-6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **React**.
+6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **ReAct**.
 
 ![Agent Style and Model](images/agent_style_model.png)
 
