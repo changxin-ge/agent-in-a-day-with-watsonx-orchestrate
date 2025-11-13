@@ -330,7 +330,7 @@ Upload the modified contract
 24. Double-click the message and enter:
 
 ```
-Extracting the content from the original and modified contract
+Extracting the content from the original and modified contract. This process may take a few mintues.
 ```
 
   ![Extraction Notification](images/extraction_message.png)
@@ -520,13 +520,13 @@ You will be provided with two legal contract documents:
 - Original Document
 - Modified Document
 
-Your task is to perform a line-by-line comparison to identify all changes made in the Modified Document compared to the Original Document.
+Your task is to perform a comparison to identify all changes made in the Modified Document compared to the Original Document.
 
 Requirements for your output:
 
 Clearly highlight differences, including additions, deletions, and modifications of any sections.
 
-Output format: The output should be well structured in the below format:
+Output format: The output should be well structured in the format below:
 
 1. (Title of the difference)
     - Specify the section under which there is a difference
@@ -536,22 +536,67 @@ Output format: The output should be well structured in the below format:
 
 and so on for all differences.
 
-DOs
-- The response should directly begin with the formatted output structure specified above and nothing else.
+Examples:
+Eg1: 
+- Section 1 Overview
+- Original Text: Effective date on **2025-11-17**
+- Modified Text: Effective date on **2026-11-17**
+- Nature of Change: Altered
 
-DON’Ts
-- DO NOT include unrelated commentary. Focus strictly on the differences.
-- DO NOT repeat differences if they appear in multiple places.
+Eg2: 
+- Section 1 Overview
+- Original Text: Refer to section **2.5**
+- Modified Text: Refer to section **2.9**
+- Nature of Change: Altered
+
+Eg3: 
+- Section 1.5 Overview Details
+- Original Text: Client **agrees** to abc clause
+- Modified Text: Client **doesn’t agree** to abc clause
+- Nature of Change: Altered
+
+Eg4:
+- Section 8 Payment Clause
+- Original Text: Missing the paragraph
+- Modified Text: Added **xyz**
+- Nature of Change: Added
+
+Eg5:
+- Section 19 Delivery Clause
+- Original Text: **abc**
+- Modified Text: Removed the clause
+- Nature of Change: Removed
 ```
 67. For the **user prompt**, enter the following:
 
 ```
 Here are the original and modified versions of the same document that I want you to compare.
 
-1. Original Document content: {self.input.original_document_content}
 
-2. Modified Document content: {self.input.modified_document_content}
+The Original Document content: 
+{self.input.original_document_content}
+
+END of the Original Document content
+
+The Modified Document content: 
+{self.input.modified_document_content}
+
+END of the Modified Document content
+
+DOs
+- The response should directly begin with the formatted output structure specified above and nothing else.
+- Answer concisely but provide enough context for the user to understand what the change is made into
+- Put a pair of "**" signs around the terms was  modified in the original text, and the changes made in the modified text
+- Highlight ALL changes in the document. There could be multiple changes in a section. 
+- Only list things that have changed. 
+
+DON’Ts
+- DO NOT include unrelated commentary. Focus strictly on the differences.
+- DO NOT omit changes that you think are not important. ALL changes are important to highlight.
+- DO NOT put eot_id tags in your response
 ```
+
+> TODO update the prompt snapshot
 
   ![Prompts](images/prompts.png)
 
@@ -561,7 +606,9 @@ Here are the original and modified versions of the same document that I want you
   ![Adjust LLM settings](images/adjust_llm.png)
 
 70. Set **Temperature** to **0.1**, **Top K** to **5**, and **Top P** to **0.95**.
-71. Select the model **llama-3-405b-instruct**.
+
+> TODO update the model snapshot
+71. Select the model **llama-4-maverick-17b-128e-instruct-fp8**.
 
   ![LLM Settings](images/llm_settings2.png)
 
@@ -664,6 +711,8 @@ Display the output response of the tool back to the user
   ![Messages](images/messages.png)
 
 5. The results should look similar to the image below:
+
+> TODO update the result snapshot 
 
   ![Result](images/result.png)
 
