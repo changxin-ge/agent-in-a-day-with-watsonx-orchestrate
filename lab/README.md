@@ -68,7 +68,7 @@ You are now ready to build your first agent. In this section, you will create a 
    ```
    Knowledge Base Agent
    ```
-  - Since you will be using a shared environment ensure you add your initials as the suffix to the agent name it keep it unique. For example  `Knowledge Base Agent (your initials)`
+
 3. Enter the following in the **Description** field:
 
    ```
@@ -138,7 +138,6 @@ Start by entering the following:
   ```
   Legal Contract Comparison Agent
   ```
-  - Since you will be using a shared environment ensure you add your initials as the suffix to the agent name it keep it unique. For example  `Legal Contract Comparison Agent (your initials)`
 4. **Description:**
 
   ```
@@ -204,13 +203,7 @@ Next step is to add the required tool for this agent. To add a tool:
 
   <img width="800" alt="image" src="images/image24.png">
 
-8. Since you will be using a shared environment ensure you add your initials as the suffix to the tool to keep it unique. To do this follow the below steps
-  ![edit](images/img24.png)
-  ![edit](images/img25.png)
-
-
 [← Back to Table of contents](#table-of-contents)
-
 </details>
 
 <details open id="create_agentic_workflow">
@@ -242,14 +235,13 @@ Let’s go ahead and create this workflow.
    * Name:
 
      ```
-     document comparison tool 
+     document comparison tool
      ```
    * Description:
 
      ```
      This tool is used to compare between legal contract documents.
      ```
-    - Since you will be using a shared environment ensure you add your initials as the suffix to the tool to keep it unique. For Example `document comparison tool (Your Initials)`
 
   ![Workflow name](images/workflow_name.png)
 
@@ -387,7 +379,7 @@ Text extractor original
 
   ![Add](images/add_icon_.png)
 
-35. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL (Your Initials)**.
+35. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL**.
 
   ![Add tool](images/fetch_text_from_urls.png)
 
@@ -638,12 +630,11 @@ Add the following instructions:
 
 ```
 If the user asks they want to compare between documents
--> Invoke the `document comparison tool (Your initials)` 
+-> Invoke the `document comparison tool` 
 This tool will return the comparison result between the documents, You will just need to display it back to the user without any modifications
 
 Also ensure you display the output of the tool only once without any repetitions.
 ```
-- Ensure you replace the tool name `document comparison tool (Your initials)` in the above prompt with the name you used while creating it.
 
   ![Behavior](images/behavior.png)
 
