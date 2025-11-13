@@ -204,10 +204,12 @@ Next step is to add the required tool for this agent. To add a tool:
 
   <img width="800" alt="image" src="images/image24.png">
 
-[← Back to Table of contents](#table-of-contents)
 8. Since you will be using a shared environment ensure you add your initials as the suffix to the tool to keep it unique. To do this follow the below steps
   ![edit](images/img24.png)
   ![edit](images/img25.png)
+
+
+[← Back to Table of contents](#table-of-contents)
 
 </details>
 
