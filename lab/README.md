@@ -163,7 +163,7 @@ You can configure all of these elements here.
   * **Tools** are functions the agent can call, such as APIs or custom code, extending the agent’s capabilities beyond what the LLM knows.
   * **Agents** are other agents, either within watsonx Orchestrate or external (such as watsonx.ai agents), that can handle a request or parts of it.
 
-6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and keep the **Default** style.
+6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **ReAct**.
 
 ![Agent Style and Model](images/agent_style_model.png)
 
@@ -240,7 +240,7 @@ Let’s go ahead and create this workflow.
    * Description:
 
      ```
-     Compare between legal documents
+     This tool is used to compare between legal contract documents.
      ```
 
   ![Workflow name](images/workflow_name.png)
@@ -676,9 +676,11 @@ Before testing the agent, complete the Behavior section. Scroll to **Behavior** 
 Add the following instructions:
 
 ```
-If the user asks to compare documents
--> Invoke the `document_comparison_tool`
-Display the output response of the tool back to the user
+If the user asks they want to compare between documents
+-> Invoke the `document comparison tool` 
+This tool will return the comparison result between the documents, You will just need to display it back to the user without any modifications
+
+Also ensure you display the output of the tool only once without any repetitions.
 ```
 
   ![Behavior](images/behavior.png)
