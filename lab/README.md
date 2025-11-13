@@ -240,7 +240,7 @@ Let’s go ahead and create this workflow.
    * Description:
 
      ```
-     Compare between legal documents
+     This tool is used to compare between legal contract documents.
      ```
 
   ![Workflow name](images/workflow_name.png)
