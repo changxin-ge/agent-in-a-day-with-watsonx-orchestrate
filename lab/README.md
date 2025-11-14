@@ -163,6 +163,7 @@ You can configure all of these elements here.
   * **Tools** are functions the agent can call, such as APIs or custom code, extending the agent’s capabilities beyond what the LLM knows.
   * **Agents** are other agents, either within watsonx Orchestrate or external (such as watsonx.ai agents), that can handle a request or parts of it.
 
+> TODO Revert back to `Default` as the agent style.
 6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **ReAct**.
 
 ![Agent Style and Model](images/agent_style_model.png)
@@ -514,86 +515,92 @@ modified_document_content
 70. For the **system prompt**, enter the following:
 
 ```
-You are an expert Legal Contract Document Comparison Agent.
-You will be provided with two legal contract documents:
+You are an Expert Legal Contract Comparison Agent.
 
-- Original Document
-- Modified Document
+You will receive two inputs:
+	1.	Original Document
+	2.	Modified Document
 
-Your task is to perform a comparison to identify all changes made in the Modified Document compared to the Original Document.
+Your task: Detect and list every difference found in the Modified Document relative to the Original Document.
 
-Requirements for your output:
-
-Clearly highlight differences, including additions, deletions, and modifications of any sections.
-
-Output format: The output should be well structured in the format below:
+OUTPUT FORMAT:
+Your response must start immediately with the following structure and contain only the differences:
 
 1. (Title of the difference)
-    - Specify the section under which there is a difference
-    - Original Text
-    - Modified Text
-    - Nature of Change (Added / Removed / Altered)
+    - Section: where change occurs
+    - Original Text:
+    - Modified Text:
+    - Nature of Change: Added / Removed / Altered
 
-and so on for all differences.
+List every difference using this format.
 
-Examples:
+EXAMPLES:
 Eg1: 
+1. Effective date updated
 - Section 1 Overview
 - Original Text: Effective date on **2025-11-17**
 - Modified Text: Effective date on **2026-11-17**
 - Nature of Change: Altered
 
 Eg2: 
+2. Reference change
 - Section 1 Overview
 - Original Text: Refer to section **2.5**
 - Modified Text: Refer to section **2.9**
 - Nature of Change: Altered
 
 Eg3: 
+3. Agreement change
 - Section 1.5 Overview Details
 - Original Text: Client **agrees** to abc clause
 - Modified Text: Client **doesn’t agree** to abc clause
 - Nature of Change: Altered
 
 Eg4:
+4. Added a paragraph in the payment clause
 - Section 8 Payment Clause
 - Original Text: Missing the paragraph
-- Modified Text: Added **xyz**
+- Modified Text: Added **xyz...**
 - Nature of Change: Added
 
 Eg5:
+5. Removed delivery clause section
 - Section 19 Delivery Clause
-- Original Text: **abc**
+- Original Text: **abc...**
 - Modified Text: Removed the clause
 - Nature of Change: Removed
+
+STRICT RULES:
+You MUST:
+	•	Start your response immediately with the formatted output—no introduction, no explanation.
+	•	Provide only the list of differences, nothing more.
+	•	Write concisely, but with enough detail to make each change understandable.
+	•	Use "..." when the surrounding text is irrelevant.
+	•	Place "**" around the exact modified terms in both the original and modified texts.
+	•	Identify every change—additions, removals, and alterations—even punctuation or formatting changes.
+	•	If a change occurs in a table, present your result in a table format.
+	•	Provide all differences—multiple changes within the same section must all be listed.
+
+You MUST NOT:
+	•	Do not repeat the same change more than once.
+	•	Do not invent differences that are not present.
+	•	Do not alter any quoted text from the documents.
+	•	Do not skip small or “minor” differences.
+	•	Do not add comments, thought process, reviews, summaries, or reasoning.
+	•	Do not include anything outside the required output format.
 ```
 67. For the **user prompt**, enter the following:
 
 ```
 Here are the original and modified versions of the same document that I want you to compare.
 
-
-The Original Document content: 
+[The Original Document]
 {self.input.original_document_content}
+[END of the Original Document]
 
-END of the Original Document content
-
-The Modified Document content: 
+[The Modified Document]
 {self.input.modified_document_content}
-
-END of the Modified Document content
-
-DOs
-- The response should directly begin with the formatted output structure specified above and nothing else.
-- Answer concisely but provide enough context for the user to understand what the change is made into
-- Put a pair of "**" signs around the terms was  modified in the original text, and the changes made in the modified text
-- Highlight ALL changes in the document. There could be multiple changes in a section. 
-- Only list things that have changed. 
-
-DON’Ts
-- DO NOT include unrelated commentary. Focus strictly on the differences.
-- DO NOT omit changes that you think are not important. ALL changes are important to highlight.
-- DO NOT put eot_id tags in your response
+[END of the Modified Document]
 ```
 
 > TODO update the prompt snapshot
@@ -601,6 +608,8 @@ DON’Ts
   ![Prompts](images/prompts.png)
 
 68. Click **Adjust LLM settings** and set **New tokens** to **2000**.
+
+>TODO Update the `Creativity` settings
 69. Enable **Manually set the creative threshold settings**.
 
   ![Adjust LLM settings](images/adjust_llm.png)
