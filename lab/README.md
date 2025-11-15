@@ -91,7 +91,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 
   ![Upload](images/upload.png)
 
-7. Click **Drag and drop files here or click to upload**. Upload any file as your knowledge, for example [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>), and click **Next**.
+7. Click **Drag and drop files here or click to upload**. Upload any file as your knowledge, for example [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>) and click **Next**.
 
   ![File upload](images/file_uploaded.png)
 
@@ -117,7 +117,7 @@ If you add your document as a knowledge base for the agent, it will be able to p
 <details open id="The_Legal_Contract_Comparison_Agent">
 <summary><h2>4. The Legal Contract Comparison Agent</h2></summary>
 
-This section demonstrates how to build a legal contract comparison agent that analyzes original and modified contracts to identify key differences and changes.
+This section demonstrates how to build a legal contract comparison agent that analyses original and modified contracts to identify key differences and changes.
 
 
 <details open id="initial_setup">
@@ -153,7 +153,7 @@ In AI agent design, descriptions are not only documentation. They are used by th
 On the next screen, you can configure additional details about your agent.
 
 * Agents can work with **Knowledge**, a **Toolset** (which includes Tools and Agents), or both, to satisfy incoming requests.
-* You can also choose the **AI model**, the **agent style**, and the **voice modality**.
+* You can also choose the **AI model**, the **agent style** and the **voice modality**.
 
 You can configure all of these elements here.
 
@@ -257,7 +257,7 @@ Let’s go ahead and create this workflow.
 
   ![File upload](images/nav_4.png)
 
-10. Double-click **File upload**, hover over **File upload 1**, and click the pencil icon.
+10. Double-click **File upload**, hover over **File upload 1** and click the pencil icon.
 
   ![Pencil Icon](images/nav_5.png)
 
@@ -271,7 +271,7 @@ Then click the checkmark.
 
   ![Update name](images/nav_6.png)
 
-12. Click **+** below the the File upload block we just created.
+12. Click **+** below the File upload block we just created.
 
   ![alt text](images/nav_7.png)
 
@@ -283,7 +283,7 @@ Then click the checkmark.
   
   ![alt text](images/nav_9.png)
 
-15. Double-click **Text extractor 1**, hover over it, and click the pencil icon.
+15. Double-click **Text extractor 1**, hover over it and click the pencil icon.
 
   ![alt text](images/nav_10.png)
 
@@ -295,7 +295,7 @@ Text extractor original
 
   ![Rename](images/nav_11.png)
 
-17. Click **+** below the green User Axtivity block.
+17. Click **+** below the green User Activity block.
 
   ![alt text](images/nav_12.png)
   
@@ -303,7 +303,7 @@ Text extractor original
 
   ![alt text](images/nav_13.png)
 
-19. Double click **Fetch text content from URL**, hover over it, and click the pencil icon.
+19. Double click **Fetch text content from URL**, hover over it and click the pencil icon.
 
 20. Update the title to:
 
@@ -345,7 +345,7 @@ Fetch text content from URL original
 
   ![File upload](images/nav_20.png)
 
-29. Double-click **File upload**, hover over **File upload 1**, and click the pencil icon.
+29. Double-click **File upload**, hover over **File upload 1** and click the pencil icon.
 
   ![Pencil Icon](images/nav_21.png)
 
@@ -360,7 +360,7 @@ Then click the checkmark.
   ![Update name](images/nav_22.png)
 
 
-31. Click **+** below the the File upload block we just created.
+31. Click **+** below the File upload block we just created.
 
   ![alt text](images/nav_23.png)
 
@@ -372,7 +372,7 @@ Then click the checkmark.
   
   ![alt text](images/nav_25.png)
 
-34. Double-click **Text extractor 1**, hover over it, and click the pencil icon.
+34. Double-click **Text extractor 1**, hover over it and click the pencil icon.
 
   ![alt text](images/nav_26.png)
 
@@ -385,7 +385,7 @@ Text extractor modified
   ![Rename](images/nav_27.png)
 
 
-36. Click **+** below the green User Axtivity block.
+36. Click **+** below the green User Activity block.
 
   ![alt text](images/nav_28.png)
   
@@ -393,7 +393,7 @@ Text extractor modified
 
   ![alt text](images/nav_29.png)
 
-38. Double click **Fetch text content from URL**, hover over it, and click the pencil icon.
+38. Double click **Fetch text content from URL**, hover over it and click the pencil icon.
 
 39. Update the title to:
 
@@ -572,7 +572,7 @@ Here are the original and modified versions of the same document that I want you
 59. Click **Adjust LLM settings** and 
   - Set the max limit for **New tokens** to **2000** by sliding the scrollbar to the **rightmost**.
   - Drag the scrollbar for **the Creative Threshold** to the **leftmost** to make it **More precise**
-  - Click on the model and Select the model **llama-4-maverick-17b-128e-instruct-fp8**.
+  - Click on the model and select the model **llama-4-maverick-17b-128e-instruct-fp8**.
 
   ![Adjust LLM settings](images/nav_43.png)
 
@@ -580,12 +580,12 @@ Here are the original and modified versions of the same document that I want you
 
   ![Edit Mapping](images/nav_44.png)
 
-61. Hover over to the **modified_document_content** row and Click the **{x}** icon present in that row.
+61. Hover over to the **modified_document_content** row and click the **{x}** icon present in that row.
 62. From the left panel, select **Fetch text content from URL modified**, then click **file_content**.
 
   ![Selection](images/nav_45.png)
 
-63. Hover over to the **original_document_content** Crow and Click the **{x}** icon present in that row.
+63. Hover over to the **original_document_content** Crow and click the **{x}** icon present in that row.
 64. From the left panel, select **Fetch text content from URL original**, then click **file_content**.
 
   ![Selection](images/nav_46.png)
@@ -613,7 +613,7 @@ Here are the original and modified versions of the same document that I want you
 
   ![Edit Mapping](images/nav_47.png)
 
-71. Hover over to the **output** row and Click the **{x}** icon present in that row.
+71. Hover over to the **output** row and click the **{x}** icon present in that row.
 
   ![Output Mapping](images/output_mapping.png)
 
@@ -717,11 +717,11 @@ To deploy the Legal Contract Comparison Agent
 <details open id="summary">
 <summary><h2>5. Summary</h2></summary>
 
-In this lab we automated the process of comparing two versions of a legal contract and highlighting the differences between them. We built a custom agent in watsonx Orchestrate, added an OpenAPI-based tool, and created an agentic workflow that guides the user through uploading the original and modified documents. The workflow then extracts text from both files, retrieves the content through the custom tool, and feeds the results into a generative prompt that produces a structured comparison of additions, deletions, and modifications. This provides a clear, reliable summary of every change made between contract versions.
+In this lab we automated the process of comparing two versions of a legal contract and highlighting the differences between them. We built a custom agent in watsonx Orchestrate, added an OpenAPI-based tool and created an agentic workflow that guides the user through uploading the original and modified documents. The workflow then extracts text from both files, retrieves the content through the custom tool and feeds the results into a generative prompt that produces a structured comparison of additions, deletions and modifications. This provides a clear, reliable summary of every change made between contract versions.
 
 The workflow can be extended with additional steps, such as automatically notifying reviewers, generating a change-impact summary, or triggering downstream approval processes. Using an agentic workflow ensures the comparison is handled consistently every time, while still allowing the agent to involve the legal reviewer whenever intervention is needed.
 
-Combining agentic workflows with tools and task-level actions gives the agent the flexibility to handle both simple and multi-step processes. Users can chat with the agent to perform individual tasks, or rely on the workflow to manage complex document review operations from start to finish.
+Combining agentic workflows with tools and task-level actions gives the agent the flexibility to handle both simple and multi-step processes. Users can chat with the agent to perform individual tasks or rely on the workflow to manage complex document review operations from start to finish.
 
 [← Back to Table of contents](#table-of-contents) | [← Back to Main page](../README.md)
 </details>
