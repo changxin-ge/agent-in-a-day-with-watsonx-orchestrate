@@ -163,7 +163,6 @@ You can configure all of these elements here.
   * **Tools** are functions the agent can call, such as APIs or custom code, extending the agent’s capabilities beyond what the LLM knows.
   * **Agents** are other agents, either within watsonx Orchestrate or external (such as watsonx.ai agents), that can handle a request or parts of it.
 
-> TODO Revert back to `Default` as the agent style.
 6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **Default**.
 
 ![Agent Style and Model](images/nav_1.png)
@@ -665,23 +664,23 @@ Also ensure you display the output of the tool only once without any repetitions
 
 2. The agent will ask you to upload your original contract: [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
 
+**Estimated Time for Extracting content from the original Contract : 1 minute**
+
+
 3. Next, it will ask you to upload your modified contract:
 [Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
 
-**Estimated Time for Comparison Result : 1.5 - 2 minutes**
+**Estimated Time for Extracting content from the modified Contract : 1 minute**
 
 4. You will see messages indicating:
 
-  **Extracting the content from the original and modified contract**, followed by
   **Comparing the document contents**.
 
-  ![Messages](images/messages.png)
+**Estimated Time for Comparison Result : 1.5 - 2 minutes**
 
 5. The results should look similar to the image below:
 
-> TODO update the result snapshot 
-
-  ![Result](images/result.png)
+  ![Result](images/nav_49.png)
 
 [← Back to Table of contents](#table-of-contents)
 </details>
