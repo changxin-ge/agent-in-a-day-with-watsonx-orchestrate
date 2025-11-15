@@ -164,9 +164,9 @@ You can configure all of these elements here.
   * **Agents** are other agents, either within watsonx Orchestrate or external (such as watsonx.ai agents), that can handle a request or parts of it.
 
 > TODO Revert back to `Default` as the agent style.
-6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **ReAct**.
+6. You can select the **Large Language Model** the agent uses and the **style**. For this agent, select **llama-3-405b-instruct** and the agent style as **Default**.
 
-![Agent Style and Model](images/agent_style_model.png)
+![Agent Style and Model](images/nav_1.png)
 
 [← Back to Table of contents](#table-of-contents)
 </details>
@@ -184,23 +184,19 @@ Next step is to add the required tool for this agent. To add a tool:
 
   ![All tools](images/all_tools.png)
 
-3. Select **Add from file or MCP server**.
+3. Select **OpenAPI** option.
 
-  ![Add from file or MCP server](images/add_file.png)
+  ![Add from file or MCP server](images/nav_2.png)
 
-4. Click **Import from file**.
-
-  ![Import from file](images/image21.png)
-
-5. Click **Drag and drop an OpenAPI file here or click to upload.**
+4. Click **Drag and drop an OpenAPI file here or click to upload.**
 
   ![Drag](images/image22.png)
 
-6. Upload the **OpenAPI tool file** downloaded in the beginning : [read-url-openapi.json](documents/read-url-openapi.json).
+5. Upload the **OpenAPI tool file** downloaded in the beginning : [read-url-openapi.json](documents/read-url-openapi.json).
 
   ![upload](images/image23.png)
 
-7. **Select the checkbox** next to the operation name and click **Done**.
+6. **Select the checkbox** next to the operation name and click **Done**.
 
   <img width="800" alt="image" src="images/image24.png">
 
@@ -223,9 +219,9 @@ Let’s go ahead and create this workflow.
 
 2. Scroll down to the **Toolset** tab and click **Add Tool**.
 
-3. Select **Create an agentic workflow**.
+3. Select **Agentic workflow**.
 
-   <img width="800" alt="image" src="images/image10.png">
+   <img width="800" alt="image" src="images/nav_3.png">
 
 4. Click the pencil icon next to **Edit details**.
 
@@ -258,31 +254,15 @@ Let’s go ahead and create this workflow.
 
   ![Add option](images/add_option.png)
 
-9. From the **Display to user** tab, select **Message**.
+9. From the **Collect from user** tab, select **File upload**.
 
-  ![Message](images/message.png)
+  ![File upload](images/nav_4.png)
 
-10. Double-click the message and add the following text in the **Output message** field:
+10. Double-click **File upload**, hover over **File upload 1**, and click the pencil icon.
 
-```
-Upload the original contract
-```
+  ![Pencil Icon](images/nav_5.png)
 
-  ![Output Message](images/outputmessage.png)
-
-11. Click **+** again.
-
-  ![Add button](images/second_add.png)
-
-12. From the **Collect from user** tab, select **File upload**.
-
-  ![File upload](images/og_fileupload.png)
-
-13. Double-click **File upload**, hover over **File upload 1**, and click the pencil icon.
-
-  ![Pencil Icon](images/file_upload_pencil_icon.png)
-
-14. Update the title to:
+11. Update the title to:
 
 ```
 Upload the original Contract
@@ -290,221 +270,206 @@ Upload the original Contract
 
 Then click the checkmark.
 
-  ![Update name](images/update_file_upload.png)
+  ![Update name](images/nav_6.png)
 
-15. Click **+**.
+12. Click **+** below the the File upload block we just created.
 
-  ![alt text](images/second_add_option.png)
+  ![alt text](images/nav_7.png)
 
-16. From **Display to user**, select **Message**.
+13. Click on the **Create new** tab.
 
-17. Double-click the message and enter:
+  ![alt text](images/nav_8.png)
 
-```
-Upload the modified contract
-```
+14. Select the **Text Extractor** Option.
+  
+  ![alt text](images/nav_9.png)
 
-  ![Modified](images/modiified_message.png)
+15. Double-click **Text extractor 1**, hover over it, and click the pencil icon.
 
-18. Click **+**.
+  ![alt text](images/nav_10.png)
 
-  ![Modified File Upload](images/modified_file_upload_add.png)
-
-19. From **Collect from user**, select **File upload**.
-
-20. Double-click it, hover over **File upload 1**, and click the pencil icon.
-
-21. Update the title to:
-
-```
-Upload the modified contract
-```
-
-  ![Modified File Upload](images/modified_file_upload.png)
-
-22. Click **+**.
-
-  ![Add button](images/add_for_extract_msg.png)
-
-23. From **Display to user**, select **Message**.
-
-24. Double-click the message and enter:
-
-```
-Extracting the content from the original and modified contract. This process may take a few mintues.
-```
-
-  ![Extraction Notification](images/extraction_message.png)
-
-25. Outside the User Activity box, click **+**.
-
-  ![Add outside user activity box](images/add_outside_user_activity.png)
-
-26. From **Create new**, select **Text extractor**.
-
-  ![Text extractor](images/text_extractor.png)
-
-27. Double-click **Text extractor 1**, hover over it, and click the pencil icon.
-
-  ![Text Extractor](images/text_extraction_pencil.png)
-
-28. Update the title to:
+16. Update the title to:
 
 ```
 Text extractor original
 ```
 
-  ![Rename](images/Rename_text_extractor.png)
+  ![Rename](images/nav_11.png)
 
-29. Click **Edit data mapping**.
+17. Click **+** below the green User Axtivity block.
 
-  ![Data Mapping](images/edit_data_mapping.png)
+  ![alt text](images/nav_12.png)
+  
+18. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL**.
 
-30. Hover over to the **document_ref** row and click the **{x}** icon.
+  ![alt text](images/nav_13.png)
 
-  ![Variable](images/variable.png)
+19. Double click **Fetch text content from URL**, hover over it, and click the pencil icon.
 
-31. From the left panel, select **Upload the original contract**.
-
-  ![Original Contract](images/og_contract.png)
-
-32. Click **value**.
-
-  ![Value](images/value.png)
-
-33. Close the dialog.
-
-  ![Close](images/close_button.png)
-
-34. Click **+**.
-
-  ![Add](images/add_icon_.png)
-
-35. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL**.
-
-  ![Add tool](images/fetch_text_from_urls.png)
-
-36. Double click **Fetch text content from URL**, hover over it, and click the pencil icon.
-
-37. Update the title to:
+20. Update the title to:
 
 ```
 Fetch text content from URL original
 ```
 
-  ![Rename](images/rename_tool.png)
+  ![Rename](images/nav_14.png)
 
-38. Click **Edit data mapping**.
+21. Click **Edit data mapping**.
 
-  ![mapping](images/mapping.png)
+  ![mapping](images/nav_15.png)
 
-39. Hover over to the **url** row and click the **{x}** icon.
+22. Hover over to the **url** row and click the **{x}** icon.
 
   ![Mapping](images/mapping2.png)
 
-40. From the left, select **Text extractor original**, then select **output_file_ref**.
+23. From the left, select **Text extractor original**, then select **output_file_ref**.
 
-  ![Output file ref](images/output_file_ref.png)
+  ![Output file ref](images/nav_16.png)
 
-41. Click the close button.
+24. Click the close button.
 
   ![Close](images/close2.png)
 
-42. Click **+** again and, from the **Create new** tab, select **Text extractor**.
+25. Click **+** below the tool block we just created.
 
-43. Double-click **Text extractor 2**, hover over it, and click the pencil icon.
+  ![alt text](images/nav_17.png)
 
-44. Update the title to:
+26. Select **User activity**.
+
+  ![alt text](images/nav_18.png)
+
+27. Click **Add +**.
+
+  ![Add option](images/nav_19.png)
+
+28. From the **Collect from user** tab, select **File upload**.
+
+  ![File upload](images/nav_20.png)
+
+29. Double-click **File upload**, hover over **File upload 1**, and click the pencil icon.
+
+  ![Pencil Icon](images/nav_21.png)
+
+30. Update the title to:
+
+```
+Upload the Modified Contract
+```
+
+Then click the checkmark.
+
+  ![Update name](images/nav_22.png)
+
+
+31. Click **+** below the the File upload block we just created.
+
+  ![alt text](images/nav_23.png)
+
+32. Click on the **Create new** tab.
+
+  ![alt text](images/nav_24.png)
+
+33. Select the **Text Extractor** Option.
+  
+  ![alt text](images/nav_25.png)
+
+34. Double-click **Text extractor 1**, hover over it, and click the pencil icon.
+
+  ![alt text](images/nav_26.png)
+
+35. Update the title to:
 
 ```
 Text extractor modified
 ```
 
-  ![Text extractor Modified](images/Modified_text_extractor.png)
+  ![Rename](images/nav_27.png)
 
-45. Click **Edit data mapping**.
 
-46. Hover over to the **document_ref** row and click the **{x}** icon.
+36. Click **+** below the green User Axtivity block.
 
-47. From the left panel, select **Upload the modified contract**, then click **value**.
+  ![alt text](images/nav_28.png)
+  
+37. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL**.
 
-  ![value](images/value2.png)
+  ![alt text](images/nav_29.png)
 
-48. Click the close button.
+38. Double click **Fetch text content from URL**, hover over it, and click the pencil icon.
 
-  ![close](images/close.png)
-
-49. Click **+**.
-
-50. Open the **Tools** tab and click the **+** icon next to **Fetch text content from URL**.
-
-51. Double-click **Fetch text content from URL**, hover over it, and click the pencil icon.
-
-52. Update the title to:
+39. Update the title to:
 
 ```
 Fetch text content from URL modified
 ```
 
-  ![rename](images/tool_rename2.png)
+  ![Rename](images/nav_30.png)
 
-53. Click **Edit data mapping**.
+40. Click **Edit data mapping**.
 
-54. Hover over to the **url** row and click the **{x}** icon.
+  ![mapping](images/nav_31.png)
 
-55. From the left, select **Text extractor modified**, then select **output_file_ref**.
+41. Hover over to the **url** row and click the **{x}** icon.
 
-  ![variable](images/variable2.png)
+  ![Mapping](images/nav_32.png)
 
-56. Click the close button.
+42. From the left, select **Text extractor modified**, then select **output_file_ref**.
 
-57. Click **+**.
+  ![Output file ref](images/nav_33.png)
 
-58. Select **User activity**.
+43. Click the close button.
 
-59. Click **Add +**.
+  ![Close](images/nav_34.png)
 
-60. From the **Display to user** tab, select **Message**.
 
-61. Double-click the message and enter the following in **Output message**:
+44. Click **+** below the tool block we just created.
 
+  ![alt text](images/nav_35.png)
+
+45. Select **User activity**.
+
+  ![alt text](images/nav_36.png)
+
+46. Click **Add +**, Go to **Display to user** tab and select the **Message** option.
+
+  ![Add option](images/nav_37.png)
+
+47. Double click on the Message box and enter the below description
 ```
-Comparing the document contents
+Comparing the documents, this may take a few minutes.
 ```
+  ![Add option](images/nav_38.png)
 
-  ![Compare message](images/compare_message.png)
+49. Click on the **+** below the green user activity block we just created
+  ![Add option](images/nav_39.png)
 
-62. Outside the User Activity box, click **+**.
 
-  ![Add Icon](images/add_icon_for_prompt.png)
+50. From the **Create new** tab, select **Generative prompt**.
 
-63. From the **Create new** tab, select **Generative prompt**.
+  ![Generative Prompt](images/nav_40.png)
 
-  ![Generative Prompt](images/prompt.png)
+51. Click the pencil icon next to **Prompt Settings**.
 
-64. Click the pencil icon next to **Prompt Settings**.
+  ![Prompt Settings](images/nav_41.png)
 
-  ![Prompt Settings](images/prompt_settings.png)
-
-65. Under **Define Prompts**, click **Add**.
+52. Under **Define Prompts**, click **Add**.
 
   ![Define Prompts](images/define_prompts.png)
 
-66. Select **String**.
+53. Select **String**.
 
   ![string](images/strings.png)
 
-67. Under **Name**, enter:
+54. Under **Name**, enter:
 
 ```
 original_document_content
 ```
 
-68. Click **Add**.
+55. Click **Add**.
 
   ![Original Document Content](images/og_doc_content.png)
 
-69. Add another input with the following name:
+56. Add another input with the following name:
 
 ```
 modified_document_content
@@ -512,7 +477,7 @@ modified_document_content
 
   ![Modified Document Content](images/modified_doc_content.png)
 
-70. For the **system prompt**, enter the following:
+57. For the **system prompt**, enter the following:
 
 ```
 You are an Expert Legal Contract Comparison Agent.
@@ -589,7 +554,7 @@ You MUST NOT:
 	•	Do not add comments, thought process, reviews, summaries, or reasoning.
 	•	Do not include anything outside the required output format.
 ```
-67. For the **user prompt**, enter the following:
+58. For the **user prompt**, enter the following:
 
 ```
 Here are the original and modified versions of the same document that I want you to compare.
@@ -603,76 +568,67 @@ Here are the original and modified versions of the same document that I want you
 [END of the Modified Document]
 ```
 
-> TODO update the prompt snapshot
+  ![Prompts](images/nav_42.png)
 
-  ![Prompts](images/prompts.png)
+59. Click **Adjust LLM settings** and 
+  - Set the max limit for **New tokens** to **2000** by sliding the scrollbar to the **rightmost**.
+  - Drag the scrollbar for **the Creative Threshold** to the **leftmost** to make it **More precise**
+  - Click on the model and Select the model **llama-4-maverick-17b-128e-instruct-fp8**.
 
-68. Click **Adjust LLM settings** and set **New tokens** to **2000**.
+  ![Adjust LLM settings](images/nav_43.png)
 
->TODO Update the `Creativity` settings
-69. Enable **Manually set the creative threshold settings**.
+60. Click **Edit data mapping**.
 
-  ![Adjust LLM settings](images/adjust_llm.png)
+  ![Edit Mapping](images/nav_44.png)
 
-70. Set **Temperature** to **0.1**, **Top K** to **5**, and **Top P** to **0.95**.
+61. Hover over to the **modified_document_content** row and Click the **{x}** icon present in that row.
+62. From the left panel, select **Fetch text content from URL modified**, then click **file_content**.
 
-> TODO update the model snapshot
-71. Select the model **llama-4-maverick-17b-128e-instruct-fp8**.
+  ![Selection](images/nav_45.png)
 
-  ![LLM Settings](images/llm_settings2.png)
+63. Hover over to the **original_document_content** Crow and Click the **{x}** icon present in that row.
+64. From the left panel, select **Fetch text content from URL original**, then click **file_content**.
 
-72. Click **Edit data mapping**.
+  ![Selection](images/nav_46.png)
 
-  ![Edit Mapping](images/edit_map.png)
-
-73. Hover over to the **modified_document_content** row and Click the **{x}** icon present in that row.
-74. From the left panel, select **Fetch text content from URL modified**, then click **file_content**.
-
-  ![Selection](images/selection.png)
-
-75. Hover over to the **original_document_content** Crow and Click the **{x}** icon present in that row.
-76. From the left panel, select **Fetch text content from URL original**, then click **file_content**.
-
-  ![Selection](images/selection2.png)
-
-77. Click the close button.
+65. Click the close button.
 
   ![Close](images/prompt_close.png)
 
-78. Double click on the **Output** node.
-79. Click on the **Add** button.
+66. Double click on the **Output** node.
+67. Click on the **Add** button.
 
   ![Output Add button](images/output_add.png)
 
-80. Select **String**
+68. Select **String**
 
   ![Select String](images/data_type.png)
 
-81. In the **Name** field, enter the following and click the **Add** button
+69. In the **Name** field, enter the following and click the **Add** button
   ```
   output
   ```
   ![Output Name](images/output_variable.png)
 
-83. Click **Edit data mapping**.
+70. Click **Edit data mapping**.
 
-  ![Edit Mapping](images/edit_mapping_output.png)
+  ![Edit Mapping](images/nav_47.png)
 
-84. Hover over to the **output** row and Click the **{x}** icon present in that row.
+71. Hover over to the **output** row and Click the **{x}** icon present in that row.
 
   ![Output Mapping](images/output_mapping.png)
 
-85. From the left panel, select **Generative prompt**, then click **value**.
+72. From the left panel, select **Generative prompt**, then click **value**.
 
   ![Generated Prompt Variable](images/Generated_prompt.png)
 
-86. Click the close button.
+73. Click the close button.
 
   ![Output close button](images/output_close_button.png)
 
-87. You have now completed the workflow. Click **Done** to close the flow.
+74. You have now completed the workflow. Click **Done** to close the flow.
 
-  ![Done](images/done.png)
+  ![Done](images/nav_48.png)
 
 [← Back to Table of contents](#table-of-contents)
 </details>
