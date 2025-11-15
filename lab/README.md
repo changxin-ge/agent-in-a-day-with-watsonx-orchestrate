@@ -664,17 +664,14 @@ Also ensure you display the output of the tool only once without any repetitions
 
 2. The agent will ask you to upload your original contract: [Master Services Agreement - ACME Corp. 462390.docx](<documents/Master Services Agreement - ACME Corp. 462390.docx>)
 
-**Estimated Time for Extracting content from the original Contract : 1 minute**
-
 
 3. Next, it will ask you to upload your modified contract:
 [Modification Master Services Agreement - ACME Corp. 462390.docx](<documents/Modification Master Services Agreement - ACME Corp. 462390.docx>)
 
-**Estimated Time for Extracting content from the modified Contract : 1 minute**
 
 4. You will see messages indicating:
 
-  **Comparing the document contents**.
+  **Comparing the documents, this may take a few minutes**.
 
 **Estimated Time for Comparison Result : 1.5 - 2 minutes**
 
