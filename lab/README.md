@@ -331,7 +331,7 @@ Upload the modified contract
 24. Double-click the message and enter:
 
 ```
-Extracting the content from the original and modified contract. This process may take a few mintues.
+Extracting the content from the original and modified contract. This process may take a few minutes.
 ```
 
   ![Extraction Notification](images/extraction_message.png)
